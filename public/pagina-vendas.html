@@ -68,99 +68,59 @@
       body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       [class^="secao-"] { width: 100%; max-width: 100%; }
 
-      /* === secao-hero (hero-pele-de-seda-marcela-dezan.html) === */
+      /* === secao-hero (estilo anexo1 com fundo anexo2) === */
       .secao-hero *, .secao-hero *::before, .secao-hero *::after{
             box-sizing: border-box;
             margin: 0;
             padding: 0;
           }.secao-hero{
-            background-color: #F0E6D8;
             font-family: 'Montserrat', sans-serif;
           }.secao-hero .hero{
-            background-color: #F0E6D8;
+            position: relative;
             min-height: 100vh;
+            background-image: url('/hero-pele-de-seda.png');
+            background-size: cover;
+            background-position: right center;
+            background-repeat: no-repeat;
             display: flex;
-            align-items: stretch;
+            align-items: center;
           }.secao-hero .hero-inner{
-            display: flex;
-            flex-direction: row;
             width: 100%;
             max-width: 1280px;
             margin: 0 auto;
-            align-items: stretch;
-          }.secao-hero /* Coluna esquerda: foto */
-          .hero-photo-col{
-            position: relative;
-            flex: 0 0 45%;
-            overflow: hidden;
-            min-height: 560px;
-          }.secao-hero .hero-blob{
-            position: absolute;
-            top: -10%;
-            left: -15%;
-            width: 110%;
-            height: 110%;
-            background: linear-gradient(135deg, #F0D5C0 0%, #EDD6C4 100%);
-            border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
-            opacity: 0.3;
-            z-index: 0;
-            pointer-events: none;
-          }.secao-hero .hero-photo-placeholder{
-            position: relative;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(160deg, #b27d59 0%, #F0D5C0 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        border-radius: 50px;
-      }.secao-hero .hero-photo-placeholder span{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: rgba(61, 43, 31, 0.55);
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            padding: 8px 20px;
-            border: 1px solid rgba(61, 43, 31, 0.2);
-            border-radius: 4px;
-            background: rgba(240, 230, 216, 0.25);
-          }.secao-hero /* Coluna direita: conteudo */
-          .hero-content-col{
-            flex: 0 0 55%;
-            display: flex;
-            align-items: center;
-            padding: 80px 64px 80px 56px;
-            position: relative;
-            z-index: 2;
+            padding: 0 56px;
           }.secao-hero .hero-content-inner{
-            max-width: 520px;
-          }.secao-hero /* Headline */
-          .hero-headline{
+            max-width: 540px;
+          }.secao-hero .hero-headline{
             font-family: 'Montserrat', sans-serif;
-            font-size: clamp(2.4rem, 4vw, 3.8rem);
+            font-size: clamp(2rem, 3.4vw, 3.1rem);
             font-weight: 600;
-            line-height: 1.08;
-            letter-spacing: -0.01em;
+            line-height: 1.12;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
             color: #4a3022;
             margin-bottom: 20px;
           }.secao-hero .hero-headline em{
             font-style: italic;
             color: #b27d59;
             font-weight: 600;
-          }.secao-hero /* Subheadline */
-          .hero-subheadline{
+          }.secao-hero .hero-subheadline{
             font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.65;
+            font-size: 1.05rem;
+            font-weight: 500;
+            line-height: 1.6;
             color: #5C3D2E;
-            margin-bottom: 32px;
-          }.secao-hero /* Bullets */
-          .hero-bullets{
+            margin-bottom: 24px;
+          }.secao-hero .hero-divider{
+            width: 280px;
+            max-width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #c9a24b 0%, rgba(201,162,75,0.2) 100%);
+            border: none;
+            margin-bottom: 24px;
+          }.secao-hero .hero-bullets{
             list-style: none;
-            margin-bottom: 28px;
+            margin-bottom: 32px;
             display: flex;
             flex-direction: column;
             gap: 14px;
@@ -180,97 +140,52 @@
             font-weight: 500;
             flex-shrink: 0;
             margin-top: 2px;
-          }.secao-hero /* Video card */
-          .hero-video-card{
-            background: rgba(61, 43, 31, 0.85);
-            border-radius: 10px;
-            padding: 20px 24px;
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin-bottom: 28px;
-            cursor: pointer;
-            transition: background 0.2s ease;
-          }.secao-hero .hero-video-card:hover{
-            background: rgba(61, 43, 31, 0.95);
-          }.secao-hero .hero-video-play{
-            flex-shrink: 0;
-            width: 44px;
-            height: 44px;
-          }.secao-hero .hero-video-text{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.875rem;
-            font-weight: 400;
-            color: rgba(240, 230, 216, 0.85);
-            line-height: 1.45;
-          }.secao-hero /* Botao */
-          .hero-cta{
+          }.secao-hero .hero-cta{
             display: inline-block;
-
-
             font-family: 'Montserrat', sans-serif;
             font-size: 0.95rem;
-            font-weight: 500;
+            font-weight: 600;
             text-decoration: none;
             padding: 16px 40px;
-
             border: none;
             cursor: pointer;
             transition: opacity 0.18s ease, transform 0.18s ease;
-            letter-spacing: 0.01em;
-        background: linear-gradient(135deg, #35d32c 0%, #1f8a17 100%);
-        color: #000;
-        border-radius: 50px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }.secao-hero .hero-cta:hover{
-            opacity: 0.88;
+            background: linear-gradient(135deg, #d4af52 0%, #b8902f 100%);
+            color: #fff;
+            border-radius: 4px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+          }.secao-hero .hero-cta:hover{
+            opacity: 0.9;
             transform: translateY(-1px);
           }.secao-hero .hero-cta:focus-visible{
             outline: 2px solid #b27d59;
             outline-offset: 3px;
-          }.secao-hero /* Responsivo: mobile */
+          }
+          @media (max-width: 900px){
+            .secao-hero .hero{
+              background-position: 72% center;
+            }
+            .secao-hero .hero-content-inner{
+              max-width: 420px;
+            }
+          }
           @media (max-width: 768px){
-            .hero {
+            .secao-hero .hero{
               min-height: auto;
-            }.secao-hero .hero-inner{
-              flex-direction: column;
-            }.secao-hero .hero-photo-col{
-              flex: none;
-              width: 100%;
-              min-height: auto;
-              aspect-ratio: 3 / 4;
-            }.secao-hero .hero-blob{
-              top: -5%;
-              left: -10%;
-              width: 120%;
-              height: 120%;
-            }.secao-hero .hero-content-col{
-              flex: none;
-              width: 100%;
-              padding: 40px 24px 56px;
-            }.secao-hero .hero-content-inner{
+              background-image: linear-gradient(rgba(240,230,216,0.78), rgba(240,230,216,0.78)), url('/hero-pele-de-seda.png');
+              background-position: center;
+              padding: 56px 0;
+            }
+            .secao-hero .hero-inner{
+              padding: 0 24px;
+            }
+            .secao-hero .hero-content-inner{
               max-width: 100%;
-            }.secao-hero .hero-headline{
-              margin-bottom: 16px;
-            }.secao-hero .hero-video-card{
-              padding: 16px 18px;
-            }.secao-hero .hero-cta{
+            }
+            .secao-hero .hero-cta{
               width: 100%;
               text-align: center;
-        background: linear-gradient(135deg, #35d32c 0%, #1f8a17 100%);
-        color: #000;
-        border-radius: 50px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-          }@media (max-width: 480px){
-            .hero-content-col {
-              padding: 32px 20px 48px;
             }
           }
 
@@ -2494,61 +2409,37 @@
     <div class="secao-hero">
       <section class="hero" aria-label="Secao principal">
         <div class="hero-inner">
-          <!-- Coluna esquerda: foto -->
-          <div class="hero-photo-col" aria-hidden="true">
-            <div class="hero-blob"></div>
-            <div class="hero-photo-placeholder">
-              <span>[Foto da Marcela]</span>
-            </div>
-          </div>
+          <div class="hero-content-inner">
+            <h1 class="hero-headline">
+              Sua pele dos sonhos está mais perto do que você imagina.
+            </h1>
 
-          <!-- Coluna direita: conteudo -->
-          <div class="hero-content-col">
-            <div class="hero-content-inner">
-              <h1 class="hero-headline">
-                Sua pele dos sonhos está mais perto do que você imagina.
-              </h1>
+            <p class="hero-subheadline">
+              A diferença entre a pele que você tem hoje e a que você quer ter está em produtos que custam pouco e
+              estão em qualquer farmácia. Assista ao vídeo abaixo e descubra:
+            </p>
 
-              <p class="hero-subheadline">
-                A diferença entre a pele que você tem hoje e a que você quer ter está em produtos que custam pouco e
-                estão em qualquer farmácia. Assista ao vídeo abaixo e descubra:
-              </p>
+            <hr class="hero-divider" />
 
-              <ul class="hero-bullets" aria-label="Pontos principais">
-                <li>
-                  O ativo que a maioria das mulheres usa da forma errada, e que, na sequência certa, muda a textura da
-                  pele em semanas
-                </li>
-                <li>
-                  Por que a pele oleosa precisa de óleo e a seca não funciona só com hidratante, e como isso muda o que
-                  você precisa comprar
-                </li>
-                <li>
-                  O que acontece com a pele nas 48h depois de aplicar os ativos na sequência certa, e por que o
-                  resultado aparece antes do que você espera
-                </li>
-              </ul>
+            <ul class="hero-bullets" aria-label="Pontos principais">
+              <li>
+                O ativo que a maioria das mulheres usa da forma errada, e que, na sequência certa, muda a textura da
+                pele em semanas
+              </li>
+              <li>
+                Por que a pele oleosa precisa de óleo e a seca não funciona só com hidratante, e como isso muda o que
+                você precisa comprar
+              </li>
+              <li>
+                O que acontece com a pele nas 48h depois de aplicar os ativos na sequência certa, e por que o
+                resultado aparece antes do que você espera
+              </li>
+            </ul>
 
-              <!-- Video placeholder -->
-              <div class="hero-video-card" role="button" aria-label="Assistir video da Marcela" tabindex="0">
-                <svg
-                  class="hero-video-play"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <circle cx="22" cy="22" r="21" stroke="rgba(240,230,216,0.45)" stroke-width="1.5" />
-                  <circle cx="22" cy="22" r="21" fill="rgba(240,230,216,0.08)" />
-                  <polygon points="18,15 32,22 18,29" fill="#F0E6D8" opacity="0.9" />
-                </svg>
-                <span class="hero-video-text">Vídeo da Marcela explicando por que a base não é o problema</span>
-              </div>
-
-              <a href="#" class="hero-cta" role="button"> Quero entender o que está faltando </a>
-            </div>
+            <a href="#" class="hero-cta" role="button"> Quero entender o que está faltando </a>
           </div>
         </div>
+
       </section>
     </div>
 
