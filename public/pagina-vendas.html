@@ -34,204 +34,128 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-    }.secao-hero{
-      background-color: #F0E6D8;
+    }
+.secao-hero{
       font-family: 'Montserrat', sans-serif;
-    }.secao-hero .hero{
-      background-color: #F0E6D8;
+      -webkit-font-smoothing: antialiased;
+    }
+.secao-hero .hero{
+      position: relative;
       min-height: 100vh;
       display: flex;
-      align-items: stretch;
-    }.secao-hero .hero-inner{
-      display: flex;
-      flex-direction: row;
+      align-items: center;
+      background-image: url('/hero-pele-de-seda.png');
+      background-size: cover;
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-color: #F0E6D8;
+    }
+.secao-hero .hero-brand{
+      position: absolute;
+      top: 32px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #6b4a32;
+      z-index: 3;
+    }
+.secao-hero .hero-inner{
       width: 100%;
       max-width: 1280px;
       margin: 0 auto;
-      align-items: stretch;
-    }.secao-hero /* Coluna esquerda: foto */
-    .hero-photo-col{
-      position: relative;
-      flex: 0 0 45%;
-      overflow: hidden;
-      min-height: 560px;
-    }.secao-hero .hero-blob{
-      position: absolute;
-      top: -10%;
-      left: -15%;
-      width: 110%;
-      height: 110%;
-      background: linear-gradient(135deg, #F0D5C0 0%, #EDD6C4 100%);
-      border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
-      opacity: 0.3;
-      z-index: 0;
-      pointer-events: none;
-    }.secao-hero .hero-photo-placeholder{
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(160deg, #b27d59 0%, #F0D5C0 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  border-radius: 50px;
-}.secao-hero .hero-photo-placeholder span{
+      padding: 120px 56px 80px;
+    }
+.secao-hero .hero-content-inner{
+      max-width: 560px;
+    }
+.secao-hero .hero-headline{
       font-family: 'Montserrat', sans-serif;
-      font-size: 0.875rem;
-      font-weight: 500;
-      color: rgba(61, 43, 31, 0.55);
-      letter-spacing: 0.04em;
+      font-size: clamp(2rem, 3.4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.12;
+      letter-spacing: 0.01em;
       text-transform: uppercase;
-      padding: 8px 20px;
-      border: 1px solid rgba(61, 43, 31, 0.2);
-      border-radius: 4px;
-      background: rgba(240, 230, 216, 0.25);
-    }.secao-hero /* Coluna direita: conteudo */
-    .hero-content-col{
-      flex: 0 0 55%;
-      display: flex;
-      align-items: center;
-      padding: 80px 64px 80px 56px;
-      position: relative;
-      z-index: 2;
-    }.secao-hero .hero-content-inner{
-      max-width: 520px;
-    }.secao-hero /* Headline */
-    .hero-headline{
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(2.4rem, 4vw, 3.8rem);
-      font-weight: 600;
-      line-height: 1.08;
-      letter-spacing: -0.01em;
       color: #4a3022;
-      margin-bottom: 20px;
-    }.secao-hero .hero-headline em{
+      margin-bottom: 24px;
+    }
+.secao-hero .hero-headline em{
       font-style: italic;
       color: #b27d59;
-      font-weight: 600;
-    }.secao-hero /* Subheadline */
-    .hero-subheadline{
+    }
+.secao-hero .hero-subheadline{
       font-family: 'Montserrat', sans-serif;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.65;
-      color: #5C3D2E;
-      margin-bottom: 32px;
-    }.secao-hero /* Bullets */
-    .hero-bullets{
-      list-style: none;
-      margin-bottom: 28px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }.secao-hero .hero-bullets li{
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 400;
-      line-height: 1.55;
-      color: #5C3D2E;
-    }.secao-hero .hero-bullets li::before{
-      content: "\2713";
-      color: #b27d59;
-      font-size: 0.9rem;
+      font-size: 1.15rem;
       font-weight: 500;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }.secao-hero /* Video card */
-    .hero-video-card{
-      background: rgba(61, 43, 31, 0.85);
-      border-radius: 10px;
-      padding: 20px 24px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
+      line-height: 1.5;
+      color: #5C3D2E;
       margin-bottom: 28px;
-      cursor: pointer;
-      transition: background 0.2s ease;
-    }.secao-hero .hero-video-card:hover{
-      background: rgba(61, 43, 31, 0.95);
-    }.secao-hero .hero-video-play{
-      flex-shrink: 0;
-      width: 44px;
-      height: 44px;
-    }.secao-hero .hero-video-text{
+    }
+.secao-hero .hero-divider{
+      width: 220px;
+      height: 2px;
+      background: #c79a4d;
+      border: none;
+      margin-bottom: 28px;
+    }
+.secao-hero .hero-text{
       font-family: 'Montserrat', sans-serif;
-      font-size: 0.875rem;
+      font-size: 1.05rem;
       font-weight: 400;
-      color: rgba(240, 230, 216, 0.85);
-      line-height: 1.45;
-    }.secao-hero /* Botao */
-    .hero-cta{
+      line-height: 1.7;
+      color: #6b5443;
+      margin-bottom: 36px;
+      max-width: 460px;
+    }
+.secao-hero .hero-text strong{
+      font-weight: 700;
+      color: #4a3022;
+    }
+.secao-hero .hero-cta{
       display: inline-block;
-      
-      
       font-family: 'Montserrat', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 500;
+      font-size: 0.9rem;
+      font-weight: 700;
       text-decoration: none;
-      padding: 16px 40px;
-      
+      padding: 18px 44px;
       border: none;
       cursor: pointer;
       transition: opacity 0.18s ease, transform 0.18s ease;
-      letter-spacing: 0.01em;
-  background: linear-gradient(135deg, #35d32c 0%, #1f8a17 100%);
-  color: #000;
-  border-radius: 50px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}.secao-hero .hero-cta:hover{
-      opacity: 0.88;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: #c79a4d;
+      color: #fff;
+      border-radius: 4px;
+    }
+.secao-hero .hero-cta:hover{
+      opacity: 0.9;
       transform: translateY(-1px);
-    }.secao-hero .hero-cta:focus-visible{
+    }
+.secao-hero .hero-cta:focus-visible{
       outline: 2px solid #b27d59;
       outline-offset: 3px;
-    }.secao-hero /* Responsivo: mobile */
-    @media (max-width: 768px){
-      .hero {
+    }
+@media (max-width: 768px){
+      .secao-hero .hero{
         min-height: auto;
-      }.secao-hero .hero-inner{
-        flex-direction: column;
-      }.secao-hero .hero-photo-col{
-        flex: none;
-        width: 100%;
-        min-height: auto;
-        aspect-ratio: 3 / 4;
-      }.secao-hero .hero-blob{
-        top: -5%;
-        left: -10%;
-        width: 120%;
-        height: 120%;
-      }.secao-hero .hero-content-col{
-        flex: none;
-        width: 100%;
-        padding: 40px 24px 56px;
-      }.secao-hero .hero-content-inner{
+        background-position: center top;
+      }
+      .secao-hero .hero-inner{
+        padding: 90px 24px 56px;
+      }
+      .secao-hero .hero-content-inner{
         max-width: 100%;
-      }.secao-hero .hero-headline{
-        margin-bottom: 16px;
-      }.secao-hero .hero-video-card{
-        padding: 16px 18px;
-      }.secao-hero .hero-cta{
+        background: rgba(240, 230, 216, 0.78);
+        padding: 24px;
+        border-radius: 12px;
+      }
+      .secao-hero .hero-cta{
         width: 100%;
         text-align: center;
-  background: linear-gradient(135deg, #35d32c 0%, #1f8a17 100%);
-  color: #000;
-  border-radius: 50px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-    }@media (max-width: 480px){
-      .hero-content-col {
-        padding: 32px 20px 48px;
       }
     }
 
@@ -2455,54 +2379,33 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
 
 <div class="secao-hero">
 <section class="hero" aria-label="Secao principal">
+  <div class="hero-brand">Pele de Seda</div>
   <div class="hero-inner">
+    <div class="hero-content-inner">
 
-    <!-- Coluna esquerda: foto -->
-    <div class="hero-photo-col" aria-hidden="true">
-      <div class="hero-blob"></div>
-      <div class="hero-photo-placeholder">
-        <span>[Foto da Marcela]</span>
-      </div>
+      <h1 class="hero-headline">
+        O problema não é a sua <em>base</em>.<br>Nunca foi.
+      </h1>
+
+      <p class="hero-subheadline">
+        O segredo para uma maquiagem impecável não está no produto, está na preparação da pele.
+      </p>
+
+      <hr class="hero-divider">
+
+      <p class="hero-text">
+        Você trocou de base, testou primer, exagerou no pó fixador e a maquiagem continuou craquelando. Existe uma <strong>sequência de 4 ativos de farmácia</strong> que reconstrói a barreira da pele e faz qualquer base durar o dia todo.
+      </p>
+
+      <a href="#" class="hero-cta" role="button">
+        Quero transformar minha pele agora
+      </a>
+
     </div>
-
-    <!-- Coluna direita: conteudo -->
-    <div class="hero-content-col">
-      <div class="hero-content-inner">
-
-        <h1 class="hero-headline">
-          O problema não é a sua <em>base</em>.<br>Nunca foi.
-        </h1>
-
-        <p class="hero-subheadline">
-          Você trocou de base, testou primer, exagerou no pó fixador. A maquiagem continuou craquelando. Porque o que falha não é o produto, é a superfície que recebe ele.
-        </p>
-
-        <ul class="hero-bullets" aria-label="Pontos principais">
-          <li>A maioria das mulheres prepara o rosto para a maquiagem da mesma forma que preparava aos 18 anos, sem nenhum ativo que mude a textura real da pele</li>
-          <li>Existe uma sequência de 4 ativos de farmácia que reconstrói a barreira epidérmica e faz qualquer base durar o dia todo</li>
-          <li>Quando a pele está preparada, o acabamento natural que você via só nas fotos editadas começa a aparecer nas suas fotos sem filtro</li>
-        </ul>
-
-        <!-- Video placeholder -->
-        <div class="hero-video-card" role="button" aria-label="Assistir video da Marcela" tabindex="0">
-          <svg class="hero-video-play" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="22" cy="22" r="21" stroke="rgba(240,230,216,0.45)" stroke-width="1.5"/>
-            <circle cx="22" cy="22" r="21" fill="rgba(240,230,216,0.08)"/>
-            <polygon points="18,15 32,22 18,29" fill="#F0E6D8" opacity="0.9"/>
-          </svg>
-          <span class="hero-video-text">Vídeo da Marcela explicando por que a base não é o problema</span>
-        </div>
-
-        <a href="#" class="hero-cta" role="button">
-          Quero entender o que está faltando
-        </a>
-
-      </div>
-    </div>
-
   </div>
 </section>
 </div>
+
 
 <div class="secao-dor">
 <section class="dor-section">
