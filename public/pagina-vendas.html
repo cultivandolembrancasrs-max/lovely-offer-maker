@@ -278,7 +278,7 @@
           }.secao-dor .dor-content{
             flex: 1;
             min-width: 0;
-          }.secao-dor .dor-badge{
+          }.secao-dor .dor-badge-mobile{ display: none; }.secao-dor .dor-badge{
             display: inline-block;
             background: linear-gradient(135deg, #ba8c6e 0%, #8c5e3c 100%);
             color: #fff;
@@ -428,7 +428,7 @@
               grid-template-columns: 1fr;
               gap: 16px;
             }
-          }@media (max-width: 480px){.secao-dor .dor{ padding: 48px 20px; }.secao-dor .dor-headline{ font-size: 1.8rem; }
+          }@media (max-width: 480px){.secao-dor .dor{ padding: 48px 20px; }.secao-dor .dor-headline{ font-size: 1.8rem; }.secao-dor .dor-badge-mobile{ display: inline-block; margin-bottom: 16px; }.secao-dor .dor-content .dor-badge{ display: none; }
           }
 
       /* === secao-paliativo (paliativo-pele-de-seda-marcela-dezan.html) === */
@@ -2304,6 +2304,8 @@
 
     <div class="secao-dor">
       <section class="dor" aria-label="Para quem &eacute; o Protocolo PS">
+        <!-- Badge visível só no mobile, antes da foto -->
+        <span class="dor-badge dor-badge-mobile">Para quem &eacute; o Protocolo PS?</span>
         <!-- Foto &agrave; esquerda -->
         <div class="dor-photo" aria-hidden="true">
           <img src="https://cdn.jsdelivr.net/gh/cultivandolembrancasrs-max/lovely-offer-maker@097da63/public/assets/foto-marcela-acido.png" alt="Marcela Dezan" />
