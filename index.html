@@ -1,0 +1,2743 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina de vendas. maquiagem-express</title>
+<meta name="description" content="Pagina de vendas do produto.">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '190457683558626');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=190457683558626&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* Reset minimo pra wrappers nao colidirem com margens do body */
+html, body { margin: 0; padding: 0; overflow-x: hidden; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+[class^="secao-"] { width: 100%; max-width: 100%; }
+
+/* === secao-hero (hero-maquiagem-express.html) === */
+.secao-hero *{ box-sizing: border-box; margin: 0; padding: 0; }.secao-hero{
+      font-family: 'Montserrat', sans-serif;
+      background: #F5EDE0;
+    }.secao-hero .hero{
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 45% 55%;
+      
+      background:
+        radial-gradient(ellipse 65% 55% at 62% 42%, rgba(255, 252, 248, 0.95) 0%, transparent 70%),
+        linear-gradient(145deg, #D4A88E 0%, #E0B89A 25%, #EAC8A8 50%, #DEBA9A 75%, #D4AC90 100%);
+      position: relative;
+      overflow: hidden;
+    }.secao-hero .hero-photo{
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }.secao-hero .hero-photo img{
+      width: 100%;
+      max-height: 100vh;
+      object-fit: contain;
+      object-position: bottom center;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }.secao-hero .hero-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 72px 80px 40px;
+      position: relative;
+      z-index: 2;
+    }.secao-hero .hero-logo{
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }.secao-hero .hero-logo-mobile{
+      display: none;
+    }.secao-hero .hero-headline{
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(18px, 2.1vw, 30px);
+      font-weight: 300;
+      line-height: 1.2;
+      color: #3D2010;
+      margin-bottom: 22px;
+      letter-spacing: 0.01em;
+    }.secao-hero .hero-sub{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: #59412C;
+      width: 100%;
+      margin-bottom: 36px;
+    }.secao-hero .hero-bullets{
+      list-style: none;
+      margin-bottom: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      text-align: left;
+    }.secao-hero .hero-bullets li{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #59412C;
+      line-height: 1.6;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }.secao-hero .hero-bullets li::before{
+      content: '';
+      width: 5px;
+      height: 5px;
+      min-width: 5px;
+      background: #5B8C3A;
+      border-radius: 50%;
+      margin-top: 5px;
+      flex-shrink: 0;
+    }.secao-hero .hero-headline strong, .secao-hero .hero-sub strong, .secao-hero .hero-bullets strong{
+      font-weight: 600;
+      color: #26150B;
+    }.secao-hero .hero-cta{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 40px;
+      background: #5B8C3A;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      color: #FFFFFF;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 18px rgba(60, 100, 30, 0.3), inset 0 1px 0 rgba(255,255,255,0.15);
+      position: relative;
+      overflow: hidden;
+    }.secao-hero .hero-cta::after{
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -75%;
+      width: 50%;
+      height: 200%;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+      transform: skewX(-20deg);
+      animation: btn-shimmer 3s infinite;
+    }@keyframes btn-shimmer{
+      0%   { left: -75%; }
+      60%  { left: 130%; }
+      100% { left: 130%; }
+    }.secao-hero .hero-cta:hover{
+      background: #4A7230;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(60, 100, 30, 0.4);
+    }@media (max-width: 768px){.secao-hero .hero{
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }.secao-hero .hero-logo-mobile{
+        display: block;
+        position: absolute;
+        top: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+        width: 140px;
+        text-align: center;
+      }.secao-hero .hero-logo-mobile img{
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0 2px 6px rgba(100, 50, 20, 0.18));
+      }.secao-hero .hero-photo{
+        min-height: 340px;
+        overflow: visible;
+        position: relative;
+        z-index: 1;
+        padding-top: 48px;
+        display: flex;
+        justify-content: center;
+      }.secao-hero .hero-photo img{
+        width: 90%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+      }.secao-hero .hero-photo::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background: linear-gradient(to bottom, #DDB898 0%, transparent 100%);
+        pointer-events: none;
+        z-index: 2;
+      }.secao-hero .hero-content{
+        margin-top: -80px;
+        position: relative;
+        z-index: 3;
+        padding: 40px 24px 56px;
+      }.secao-hero .hero-headline{
+        font-size: clamp(20px, 5.5vw, 28px);
+      }.secao-hero .hero-sub{
+        font-size: 14px;
+        font-weight: 500;
+      }.secao-hero .hero-bullets li{
+        font-size: 13px;
+        font-weight: 500;
+      }.secao-hero .hero-logo{
+        display: none;
+      }
+    }
+
+/* === secao-dor (dor-maquiagem-express.html) === */
+.secao-dor *{ box-sizing: border-box; margin: 0; padding: 0; }.secao-dor{ font-family: 'Montserrat', sans-serif; }.secao-dor .dor{
+      background: #FAF4EE;
+      padding: 80px 24px 72px;
+      text-align: center;
+    }.secao-dor .dor-inner{
+      max-width: 660px;
+      margin: 0 auto;
+    }.secao-dor .dor-kicker{
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #B08060;
+      margin-bottom: 18px;
+    }.secao-dor .dor-headline{
+      font-size: clamp(26px, 3vw, 40px);
+      font-weight: 700;
+      color: #26150B;
+      line-height: 1.25;
+      margin-bottom: 52px;
+    }.secao-dor .dor-list{
+      list-style: none;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 52px;
+    }.secao-dor .dor-item{
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }.secao-dor .dor-icon{
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      color: #B08060;
+      margin-top: 1px;
+    }.secao-dor .dor-text{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }.secao-dor .dor-text strong{
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #26150B;
+      line-height: 1.4;
+    }.secao-dor .dor-text span{
+      font-size: 14px;
+      font-weight: 400;
+      color: #6B4F3A;
+      line-height: 1.6;
+    }.secao-dor .dor-cta{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 40px;
+      background: #5B8C3A;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      color: #FFFFFF;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(60, 100, 30, 0.3);
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }.secao-dor .dor-cta::after{
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -75%;
+      width: 50%;
+      height: 200%;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+      transform: skewX(-20deg);
+      animation: btn-shimmer 3s infinite;
+    }@keyframes btn-shimmer{
+      0%   { left: -75%; }
+      60%  { left: 130%; }
+      100% { left: 130%; }
+    }.secao-dor .dor-cta:hover{
+      background: #4A7230;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(60, 100, 30, 0.4);
+    }@media (max-width: 768px){.secao-dor .dor{
+        padding: 56px 24px 56px;
+      }.secao-dor .dor-headline{
+        font-size: clamp(22px, 6vw, 30px);
+        margin-bottom: 40px;
+      }.secao-dor .dor-list{
+        gap: 24px;
+        margin-bottom: 40px;
+      }.secao-dor .dor-text strong{
+        font-size: 11px;
+      }.secao-dor .dor-text span{
+        font-size: 13px;
+      }
+    }
+
+/* === secao-paliativo (paliativo-maquiagem-express.html) === */
+.secao-paliativo *{ box-sizing: border-box; margin: 0; padding: 0; }.secao-paliativo{ font-family: 'Montserrat', sans-serif; }.secao-paliativo .paliativo{
+      background:
+        linear-gradient(rgba(255,255,255,0.52) 0%, rgba(255,255,255,0.15) 100%),
+        radial-gradient(ellipse 65% 55% at 62% 42%, rgba(255, 252, 248, 0.95) 0%, transparent 70%),
+        linear-gradient(145deg, #D4A88E 0%, #E0B89A 25%, #EAC8A8 50%, #DEBA9A 75%, #D4AC90 100%);
+      padding: 80px 24px 72px;
+      text-align: center;
+    }.secao-paliativo .paliativo-inner{
+      max-width: 960px;
+      margin: 0 auto;
+    }.secao-paliativo .paliativo-kicker{
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #B08060;
+      margin-bottom: 18px;
+    }.secao-paliativo .paliativo-headline{
+      font-size: clamp(24px, 3vw, 38px);
+      font-weight: 700;
+      color: #26150B;
+      line-height: 1.25;
+      margin-bottom: 24px;
+    }.secao-paliativo .paliativo-intro{
+      max-width: 560px;
+      margin: 0 auto 52px;
+    }.secao-paliativo .paliativo-intro p{
+      font-size: 14px;
+      font-weight: 400;
+      color: #6B4F3A;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }.secao-paliativo .paliativo-grid{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: start;
+      gap: 20px;
+      margin-bottom: 52px;
+      text-align: left;
+    }.secao-paliativo .paliativo-card{
+      background: #FFFFFF;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(100, 60, 20, 0.07);
+    }.secao-paliativo .paliativo-card-photo{
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #EDD8C8;
+    }.secao-paliativo .paliativo-card-body{
+      padding: 16px 18px 20px;
+    }.secao-paliativo .paliativo-card-name{
+      font-size: 13px;
+      font-weight: 700;
+      color: #B08060;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }.secao-paliativo .paliativo-card-mudou{
+      font-size: 12px;
+      font-weight: 500;
+      color: #3D2416;
+      line-height: 1.6;
+    }.secao-paliativo .paliativo-cta{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 40px;
+      background: #5B8C3A;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      color: #FFFFFF;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(60, 100, 30, 0.3);
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }.secao-paliativo .paliativo-cta::after{
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -75%;
+      width: 50%;
+      height: 200%;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+      transform: skewX(-20deg);
+      animation: btn-shimmer 3s infinite;
+    }@keyframes btn-shimmer{
+      0%   { left: -75%; }
+      60%  { left: 130%; }
+      100% { left: 130%; }
+    }.secao-paliativo .paliativo-cta:hover{
+      background: #4A7230;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(60, 100, 30, 0.4);
+    }@media (max-width: 768px){.secao-paliativo .paliativo{
+        padding: 56px 24px 56px;
+      }.secao-paliativo .paliativo-headline{
+        font-size: clamp(22px, 6vw, 30px);
+      }.secao-paliativo .paliativo-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-bottom: 40px;
+      }
+    }@media (max-width: 480px){.secao-paliativo .paliativo-grid{
+        grid-template-columns: 1fr;
+      }.secao-paliativo #foto-christiane{
+        height: 302px;
+        object-fit: cover;
+        object-position: center 45%;
+      }
+    }
+
+/* === secao-prova-social (prova-social-maquiagem-express.html) === */
+.secao-prova-social *{ box-sizing: border-box; margin: 0; padding: 0; }.secao-prova-social{ font-family: 'Montserrat', sans-serif; }.secao-prova-social .prova{
+      background: #FAF4EE;
+      padding: 80px 24px 72px;
+      text-align: center;
+    }.secao-prova-social .prova-inner{
+      max-width: 960px;
+      margin: 0 auto;
+    }.secao-prova-social .prova-kicker{
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #B08060;
+      margin-bottom: 18px;
+    }.secao-prova-social .prova-headline{
+      font-size: clamp(24px, 3vw, 38px);
+      font-weight: 700;
+      color: #26150B;
+      line-height: 1.25;
+      margin-bottom: 48px;
+    }.secao-prova-social .galeria-outer{
+      overflow: hidden;
+      margin-bottom: 10px;
+      mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    }.secao-prova-social .galeria-outer--last{
+      margin-bottom: 52px;
+    }.secao-prova-social .galeria{
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      width: max-content;
+      animation: marquee-scroll 380s linear infinite;
+    }.secao-prova-social .galeria--rev{
+      animation-direction: reverse;
+    }.secao-prova-social .galeria--row2{
+      animation-duration: 460s;
+    }.secao-prova-social .galeria--row1 .galeria-foto{
+      height: 400px;
+    }.secao-prova-social .galeria--antes-depois{
+      animation-duration: 28s;
+    }.secao-prova-social .depo-wrap{
+      position: relative;
+      margin-bottom: 52px;
+    }.secao-prova-social .depo-rows{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }.secao-prova-social .depo-row{
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+    }.secao-prova-social .depo-row::-webkit-scrollbar{ display: none; }.secao-prova-social .depo-foto{
+      flex-shrink: 0;
+      height: 320px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(100, 60, 20, 0.10);
+    }.secao-prova-social .depo-foto--grande{
+      height: 400px;
+    }.secao-prova-social .depo-foto img{
+      height: 100%;
+      width: auto;
+      display: block;
+    }.secao-prova-social .depo-btn{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      background: #FFFFFF;
+      border: none;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 2px 14px rgba(100, 60, 20, 0.20);
+      color: #B08060;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+    }.secao-prova-social .depo-btn:hover{
+      background: #B08060;
+      color: #FFFFFF;
+      transform: translateY(-50%) scale(1.08);
+    }.secao-prova-social .depo-btn svg{ width: 20px; height: 20px; }.secao-prova-social .depo-btn--prev{ left: -24px; }.secao-prova-social .depo-btn--next{ right: -24px; }.secao-prova-social .galeria:hover{
+      animation-play-state: paused;
+    }@keyframes marquee-scroll{
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }.secao-prova-social .galeria-foto{
+      flex-shrink: 0;
+      height: 320px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(100, 60, 20, 0.10);
+    }.secao-prova-social .galeria-foto img{
+      height: 100%;
+      width: auto;
+      display: block;
+    }.secao-prova-social .prova-divisor{
+      width: 48px;
+      height: 2px;
+      background: #EDD8C8;
+      margin: 0 auto 52px;
+    }.secao-prova-social .prova-headline-grid{
+      font-size: clamp(20px, 2.5vw, 30px);
+      font-weight: 700;
+      color: #26150B;
+      line-height: 1.3;
+      margin-bottom: 36px;
+    }.secao-prova-social .prova-grid{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 52px;
+      text-align: left;
+    }.secao-prova-social .prova-card{
+      background: #FFFFFF;
+      border-radius: 12px;
+      padding: 20px 18px 22px;
+      box-shadow: 0 2px 10px rgba(100, 60, 20, 0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }.secao-prova-social .prova-card-nome{
+      font-size: 12px;
+      font-weight: 700;
+      color: #B08060;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }.secao-prova-social .prova-card-texto{
+      font-size: 13px;
+      font-weight: 400;
+      color: #4A3020;
+      line-height: 1.65;
+      font-style: italic;
+    }.secao-prova-social .prova-cta{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 40px;
+      background: #5B8C3A;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      color: #FFFFFF;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(60, 100, 30, 0.3);
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }.secao-prova-social .prova-cta::after{
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -75%;
+      width: 50%;
+      height: 200%;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+      transform: skewX(-20deg);
+      animation: btn-shimmer 3s infinite;
+    }@keyframes btn-shimmer{
+      0%   { left: -75%; }
+      60%  { left: 130%; }
+      100% { left: 130%; }
+    }.secao-prova-social .prova-cta:hover{
+      background: #4A7230;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(60, 100, 30, 0.4);
+    }@media (max-width: 768px){.secao-prova-social .prova{
+        padding: 56px 24px 56px;
+      }.secao-prova-social .prova-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 40px;
+      }
+
+    }@media (max-width: 480px){.secao-prova-social .prova-grid{
+        grid-template-columns: 1fr;
+      }
+    }
+
+/* === secao-metodo (metodo-maquiagem-express.html) === */
+.secao-metodo *{ box-sizing: border-box; margin: 0; padding: 0; }.secao-metodo{ font-family: 'Montserrat', sans-serif; }.secao-metodo .metodo{
+      background: #FAEADA;
+      padding: 88px 24px 80px;
+      text-align: center;
+    }.secao-metodo .metodo-inner{
+      max-width: 760px;
+      margin: 0 auto;
+    }.secao-metodo .metodo-kicker{
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #B08060;
+      margin-bottom: 18px;
+    }.secao-metodo .metodo-headline{
+      font-size: clamp(20px, 2.4vw, 28px);
+      font-weight: 700;
+      color: #26150B;
+      line-height: 1.25;
+      margin-bottom: 28px;
+    }.secao-metodo .metodo-intro{
+      font-size: clamp(15px, 1.6vw, 17px);
+      font-weight: 400;
+      color: #6B4F3A;
+      line-height: 1.7;
+      max-width: 580px;
+      margin: 0 auto 52px;
+    }.secao-metodo .metodo-intro strong{
+      font-weight: 700;
+      color: #26150B;
+    }.secao-metodo .metodo-img-wrap{
+      margin: 0 auto 60px;
+      max-width: 640px;
+    }.secao-metodo .metodo-img-wrap img{
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(100, 60, 20, 0.14);
+    }.secao-metodo .metodo-fases{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 52px;
+    }.secao-metodo .fase-card{
+      background: #FFFFFF;
+      border-radius: 16px;
+      overflow: hidden;
+      text-align: left;
+      box-shadow: 0 2px 16px rgba(100, 60, 20, 0.08);
+      position: relative;
+    }.secao-metodo .fase-foto{
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }.secao-metodo .fase-content{
+      padding: 24px 22px 28px;
+      border-top: 3px solid #D4A88E;
+    }.secao-metodo .fase-numero{
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #B08060;
+      margin-bottom: 10px;
+    }.secao-metodo .fase-nome{
+      font-size: 18px;
+      font-weight: 700;
+      color: #26150B;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }.secao-metodo .fase-desc{
+      font-size: 14px;
+      font-weight: 400;
+      color: #6B4F3A;
+      line-height: 1.65;
+    }.secao-metodo .metodo-cta{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 44px;
+      background: #5B8C3A;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      color: #FFFFFF;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(60, 100, 30, 0.3);
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }.secao-metodo .metodo-cta::after{
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -75%;
+      width: 50%;
+      height: 200%;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+      transform: skewX(-20deg);
+      animation: btn-shimmer 3s infinite;
+    }@keyframes btn-shimmer{
+      0%   { left: -75%; }
+      60%  { left: 130%; }
+      100% { left: 130%; }
+    }.secao-metodo .metodo-cta:hover{
+      background: #4A7230;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(60, 100, 30, 0.4);
+    }@media (max-width: 768px){.secao-metodo .metodo{
+        padding: 64px 24px 60px;
+      }.secao-metodo .metodo-fases{
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 40px;
+      }.secao-metodo .fase-card{
+        padding: 24px 20px;
+      }.secao-metodo .metodo-img-wrap{
+        margin-bottom: 44px;
+      }
+    }
+
+/* === secao-para-quem (para-quem-maquiagem-express.html) === */
+.secao-para-quem *{ box-sizing: border-box; margin: 0; padding: 0; }.secao-para-quem{ font-family: 'Montserrat', sans-serif; }.secao-para-quem .para-quem{
+      background: #FAF4EE;
+      padding: 88px 24px 80px;
+      text-align: center;
+    }.secao-para-quem .para-quem-inner{
+      max-width: 860px;
+      margin: 0 auto;
+    }.secao-para-quem .para-quem-kicker{
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #B08060;
+      margin-bottom: 16px;
+    }.secao-para-quem .para-quem-headline{
+      font-size: clamp(20px, 2.4vw, 28px);
+      font-weight: 700;
+      color: #26150B;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }.secao-para-quem .para-quem-sub{
+      font-size: 15px;
+      font-weight: 400;
+      color: #6B4F3A;
+      line-height: 1.7;
+      max-width: 580px;
+      margin: 0 auto 52px;
+    }.secao-para-quem .para-quem-grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }.secao-para-quem .pq-card{
+      background: #FFFFFF;
+      border-radius: 14px;
+      padding: 28px 24px;
+      text-align: left;
+      box-shadow: 0 2px 14px rgba(100, 60, 20, 0.07);
+      border: 1px solid rgba(176, 128, 96, 0.12);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }.secao-para-quem .pq-card:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 6px 24px rgba(100, 60, 20, 0.13);
+    }.secao-para-quem .pq-icon{
+      width: 40px;
+      height: 40px;
+      color: #B08060;
+      margin-bottom: 16px;
+    }.secao-para-quem .pq-titulo{
+      font-size: 15px;
+      font-weight: 700;
+      color: #26150B;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }.secao-para-quem .pq-desc{
+      font-size: 13px;
+      font-weight: 400;
+      color: #6B4F3A;
+      line-height: 1.65;
+    }.secao-para-quem .pq-card--cta{
+      background: #26150B;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }.secao-para-quem .pq-card--cta:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 6px 28px rgba(38, 21, 11, 0.30);
+    }.secao-para-quem .pq-card--cta .pq-icon{ color: #D4A88E; }.secao-para-quem .pq-card--cta .pq-titulo{
+      color: #FFFFFF;
+      font-size: 16px;
+      line-height: 1.4;
+    }.secao-para-quem .pq-card--cta .pq-desc{
+      color: #C8A07A;
+      margin-bottom: 0;
+    }.secao-para-quem .pq-btn-final{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 40px;
+      padding: 16px 44px;
+      background: #5B8C3A;
+      border: none;
+      border-radius: 50px;
+      color: #FFFFFF;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(60, 100, 30, 0.30);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }.secao-para-quem .pq-btn-final::after{
+      content: '';
+      position: absolute;
+      top: -50%; left: -75%;
+      width: 50%; height: 200%;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+      transform: skewX(-20deg);
+      animation: shimmer 3s infinite;
+    }.secao-para-quem .pq-btn-final:hover{ background: #4A7230; transform: translateY(-2px); }.secao-para-quem .pq-btn-final svg{
+      width: 14px; height: 14px;
+      stroke: #FFFFFF; fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round; stroke-linejoin: round;
+      flex-shrink: 0;
+    }.secao-para-quem .pq-btn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 22px;
+      background: #5B8C3A;
+      border: none;
+      border-radius: 50px;
+      color: #FFFFFF;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 3px 14px rgba(60, 100, 30, 0.35);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }.secao-para-quem .pq-btn::after{
+      content: '';
+      position: absolute;
+      top: -50%; left: -75%;
+      width: 50%; height: 200%;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+      transform: skewX(-20deg);
+      animation: shimmer 3s infinite;
+    }@keyframes shimmer{
+      0%   { left: -75%; }
+      60%  { left: 130%; }
+      100% { left: 130%; }
+    }.secao-para-quem .pq-btn:hover{ background: #4A7230; transform: translateY(-1px); }.secao-para-quem .pq-btn svg{
+      width: 14px; height: 14px;
+      stroke: #FFFFFF; fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round; stroke-linejoin: round;
+      flex-shrink: 0;
+    }@media (max-width: 768px){.secao-para-quem .para-quem{ padding: 64px 20px 60px; }.secao-para-quem .para-quem-grid{
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }.secao-para-quem .pq-card--cta{ grid-column: auto; }
+    }@media (min-width: 769px) and (max-width: 900px){.secao-para-quem .para-quem-grid{ grid-template-columns: repeat(2, 1fr); }
+    }
+
+/* === secao-entregaveis (entregaveis-maquiagem-express.html) === */
+.secao-entregaveis *{ box-sizing: border-box; margin: 0; padding: 0; }.secao-entregaveis{ font-family: 'Montserrat', sans-serif; }.secao-entregaveis .entregaveis{
+      background: #26150B;
+      padding: 88px 0 80px;
+      overflow: hidden;
+    }.secao-entregaveis .entregaveis-topo{
+      max-width: 860px;
+      margin: 0 auto 52px;
+      padding: 0 40px;
+      text-align: center;
+    }.secao-entregaveis .entregaveis-kicker{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(212, 168, 142, 0.35);
+      border-radius: 50px;
+      padding: 6px 14px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #D4A88E;
+      margin-bottom: 28px;
+    }.secao-entregaveis .entregaveis-headline{
+      font-size: clamp(24px, 3vw, 40px);
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.15;
+    }.secao-entregaveis .entregaveis-headline em{
+      font-style: normal;
+      color: #D4A88E;
+    }.secao-entregaveis .entregaveis-carousel-wrap{
+      position: relative;
+    }.secao-entregaveis .ent-seta{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid rgba(212, 168, 142, 0.40);
+      background: rgba(38, 21, 11, 0.70);
+      backdrop-filter: blur(6px);
+      color: #D4A88E;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }.secao-entregaveis .ent-seta:hover{
+      background: rgba(212, 168, 142, 0.20);
+      border-color: rgba(212, 168, 142, 0.70);
+    }.secao-entregaveis #ent-prev{ left: 16px; }.secao-entregaveis #ent-next{ right: 16px; }.secao-entregaveis .ent-seta svg{
+      width: 18px; height: 18px;
+      stroke: currentColor; fill: none;
+      stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+    }.secao-entregaveis .entregaveis-scroll{
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 28px 20px 36px;
+      scrollbar-width: none;
+      align-items: center;
+    }.secao-entregaveis .entregaveis-scroll::-webkit-scrollbar{ display: none; }.secao-entregaveis .ent-card{
+      flex: 0 0 260px;
+      background: #D4A88E;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(58, 28, 14, 0.10);
+      transform: scale(0.88);
+      opacity: 0.65;
+      transition: transform 0.35s ease, opacity 0.35s ease, border-color 0.35s ease;
+      transform-origin: center center;
+    }.secao-entregaveis .ent-card.ativo{
+      transform: scale(1);
+      opacity: 1;
+      border-color: rgba(58, 28, 14, 0.30);
+    }.secao-entregaveis .ent-foto{
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+      background: #C49070;
+    }.secao-entregaveis .ent-body{
+      padding: 20px 20px 24px;
+    }.secao-entregaveis .ent-numero{
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #5C2A10;
+      margin-bottom: 10px;
+    }.secao-entregaveis .ent-nome{
+      font-size: 17px;
+      font-weight: 700;
+      color: #26150B;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }.secao-entregaveis .ent-desc{
+      font-size: 12px;
+      font-weight: 400;
+      color: #3A1C0E;
+      line-height: 1.65;
+    }.secao-entregaveis .entregaveis-rodape{
+      max-width: 860px;
+      margin: 32px auto 0;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }.secao-entregaveis .entregaveis-valor-wrap{ display: flex; flex-direction: column; gap: 4px; }.secao-entregaveis .entregaveis-valor-label{
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase; color: #B08060;
+    }.secao-entregaveis .entregaveis-valor-linha{ display: flex; align-items: baseline; gap: 12px; }.secao-entregaveis .entregaveis-valor-riscado{
+      font-size: 15px; font-weight: 500; color: #7A5040; text-decoration: line-through;
+    }.secao-entregaveis .entregaveis-valor-atual{ font-size: 28px; font-weight: 700; color: #FFFFFF; }.secao-entregaveis .entregaveis-cta{
+      flex-shrink: 0;
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 15px 36px;
+      background: #5B8C3A; border: none; border-radius: 50px;
+      color: #FFFFFF; font-family: 'Montserrat', sans-serif;
+      font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+      text-decoration: none; cursor: pointer;
+      position: relative; overflow: hidden;
+      box-shadow: 0 4px 20px rgba(60, 100, 30, 0.30);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }.secao-entregaveis .entregaveis-cta::after{
+      content: '';
+      position: absolute; top: -50%; left: -75%; width: 50%; height: 200%;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+      transform: skewX(-20deg); animation: btn-shimmer 3s infinite;
+    }@keyframes btn-shimmer{
+      0%   { left: -75%; }
+      60%  { left: 130%; }
+      100% { left: 130%; }
+    }.secao-entregaveis .entregaveis-cta:hover{ background: #4A7230; transform: translateY(-2px); }@media (max-width: 640px){.secao-entregaveis .entregaveis{ padding: 64px 0 60px; }.secao-entregaveis .entregaveis-topo{ padding: 0 20px; margin-bottom: 32px; }.secao-entregaveis .entregaveis-scroll{ padding: 20px 20px 28px; gap: 14px; }.secao-entregaveis .ent-card{ flex: 0 0 220px; }.secao-entregaveis .entregaveis-rodape{ flex-direction: column; align-items: center; padding: 0 20px; }.secao-entregaveis #ent-prev{ left: 8px; }.secao-entregaveis #ent-next{ right: 8px; }
+    }
+</style>
+</head>
+<body>
+
+<div class="secao-hero">
+<section class="hero">
+
+    <!-- Logo mobile — visível só no mobile, acima da foto -->
+    <div class="hero-logo-mobile">
+      <img src="../fotos marcela/logo maquiagem express.png" alt="Maquiagem Express">
+    </div>
+
+    <!-- Foto esquerda — PNG com fundo transparente -->
+    <div class="hero-photo">
+      <img src="../fotos marcela/hero png.png" alt="Marcela Dezan — Maquiagem Express">
+    </div>
+
+    <!-- Conteúdo direito -->
+    <div class="hero-content">
+      <img src="../fotos marcela/logo maquiagem express.png" alt="Maquiagem Express" class="hero-logo">
+
+      <h1 class="hero-headline">Uma maquiagem bonita e natural que <strong>não marca nas linhas, não pesa na pele</strong> e <strong>não te envelhece.</strong></h1>
+
+      <p class="hero-sub">
+        Com o passar do tempo, a pele muda e a maquiagem precisa mudar junto. <strong>Existe uma técnica para isso:</strong> leve, elegante e natural, em poucos minutos, <strong>com os produtos que você já tem.</strong>
+      </p>
+
+      <ul class="hero-bullets">
+        <li><span>Tenha uma maquiagem que fica bonita por horas, <strong>não craquela nas linhas de expressão</strong> e mantém o acabamento do início ao fim do dia.</span></li>
+        <li><span>Com uma rotina simplificada, e <strong>poucos produtos na sequência certa,</strong> que entregam resultado natural e uniforme.</span></li>
+        <li><span>Faça uma maquiagem pronta em <strong>15 minutos,</strong> que te deixa bonita para o trabalho, para eventos e para o dia a dia.</span></li>
+      </ul>
+
+      <a href="https://pay.kiwify.com.br/iNGDfXc" class="hero-cta">Quero uma maquiagem elegante e natural</a>
+    </div>
+
+  </section>
+</div>
+
+<div class="secao-dor">
+<section class="dor">
+    <div class="dor-inner">
+
+      <p class="dor-kicker">ISSO PARECE FAMILIAR?</p>
+      <h2 class="dor-headline">Quando a maquiagem começou a craquelar, você...</h2>
+
+      <ul class="dor-list">
+
+        <li class="dor-item">
+          <div class="dor-icon">
+            <!-- Ícone: pincel de maquiagem -->
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2c0 0 .6 5.5 2.3 7.2C16 10.9 21.5 12 21.5 12s-5.5 1.1-7.2 2.8C12.6 16.5 12 22 12 22s-.6-5.5-2.3-7.2C8 13.1 2.5 12 2.5 12S8 10.9 9.7 9.2C11.4 7.5 12 2 12 2z"/>
+            </svg>
+          </div>
+          <div class="dor-text">
+            <strong>Trocou de base</strong>
+            <span>Comprou uma mais cara, importada, de farmácia diferente. A base continuou craquelando nas linhas de expressão.</span>
+          </div>
+        </li>
+
+        <li class="dor-item">
+          <div class="dor-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2c0 0 .6 5.5 2.3 7.2C16 10.9 21.5 12 21.5 12s-5.5 1.1-7.2 2.8C12.6 16.5 12 22 12 22s-.6-5.5-2.3-7.2C8 13.1 2.5 12 2.5 12S8 10.9 9.7 9.2C11.4 7.5 12 2 12 2z"/>
+            </svg>
+          </div>
+          <div class="dor-text">
+            <strong>Experimentou primer</strong>
+            <span>Testou dois ou três tipos. Nenhum resolveu ou combinou com a base que você já tinha.</span>
+          </div>
+        </li>
+
+        <li class="dor-item">
+          <div class="dor-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2c0 0 .6 5.5 2.3 7.2C16 10.9 21.5 12 21.5 12s-5.5 1.1-7.2 2.8C12.6 16.5 12 22 12 22s-.6-5.5-2.3-7.2C8 13.1 2.5 12 2.5 12S8 10.9 9.7 9.2C11.4 7.5 12 2 12 2z"/>
+            </svg>
+          </div>
+          <div class="dor-text">
+            <strong>Comprou uma bruma fixadora cara</strong>
+            <span>Segurou por mais uma hora. No fim do dia, o acabamento estava igual.</span>
+          </div>
+        </li>
+
+        <li class="dor-item">
+          <div class="dor-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2c0 0 .6 5.5 2.3 7.2C16 10.9 21.5 12 21.5 12s-5.5 1.1-7.2 2.8C12.6 16.5 12 22 12 22s-.6-5.5-2.3-7.2C8 13.1 2.5 12 2.5 12S8 10.9 9.7 9.2C11.4 7.5 12 2 12 2z"/>
+            </svg>
+          </div>
+          <div class="dor-text">
+            <strong>Seguiu tutorial no YouTube</strong>
+            <span>Ficou bonito em casa. Na rua, a make não durou duas horas.</span>
+          </div>
+        </li>
+
+        <li class="dor-item">
+          <div class="dor-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2c0 0 .6 5.5 2.3 7.2C16 10.9 21.5 12 21.5 12s-5.5 1.1-7.2 2.8C12.6 16.5 12 22 12 22s-.6-5.5-2.3-7.2C8 13.1 2.5 12 2.5 12S8 10.9 9.7 9.2C11.4 7.5 12 2 12 2z"/>
+            </svg>
+          </div>
+          <div class="dor-text">
+            <strong>Pagou maquiadora para um evento especial</strong>
+            <span>Chegou pesada, carregada, com uma make que não era você. Chegou em casa e foi direto tirar tudo.</span>
+          </div>
+        </li>
+
+        <li class="dor-item">
+          <div class="dor-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2c0 0 .6 5.5 2.3 7.2C16 10.9 21.5 12 21.5 12s-5.5 1.1-7.2 2.8C12.6 16.5 12 22 12 22s-.6-5.5-2.3-7.2C8 13.1 2.5 12 2.5 12S8 10.9 9.7 9.2C11.4 7.5 12 2 12 2z"/>
+            </svg>
+          </div>
+          <div class="dor-text">
+            <strong>Nada funcionou de verdade</strong>
+            <span>O problema está no passo que vem antes de todos eles.</span>
+          </div>
+        </li>
+
+      </ul>
+
+      <a href="https://pay.kiwify.com.br/iNGDfXc" class="dor-cta">Quero uma maquiagem elegante e natural</a>
+
+    </div>
+  </section>
+</div>
+
+<div class="secao-paliativo">
+<section class="paliativo">
+    <div class="paliativo-inner">
+
+      <p class="paliativo-kicker">ANTES DO CURSO, ELAS TAMBÉM TENTARAM</p>
+      <h2 class="paliativo-headline">A base cara, a maquiadora, os tutoriais.<br>Nada funcionou como esperavam.</h2>
+
+      <div class="paliativo-intro">
+        <p>O problema nunca foi falta de esforço. São mulheres que já tinham tentado de tudo antes de encontrar a técnica certa.</p>
+      </div>
+
+      <div class="paliativo-grid">
+
+        <div class="paliativo-card">
+          <img class="paliativo-card-photo" id="foto-christiane" src="../depoimentos/Cristiane Penna.JPG" alt="Christiane Penna">
+          <div class="paliativo-card-body">
+            <p class="paliativo-card-name">Christiane Penna</p>
+            <p class="paliativo-card-mudou">"Aprendi que produtos bons não precisam ser caros. Basta saber usar."</p>
+          </div>
+        </div>
+
+        <div class="paliativo-card">
+          <img class="paliativo-card-photo" src="../depoimentos/camila.PNG" alt="Camila">
+          <div class="paliativo-card-body">
+            <p class="paliativo-card-name">Camila</p>
+            <p class="paliativo-card-mudou">"Usando os mesmos produtos de antes, consigo um resultado muito melhor. Me sinto muito mais segura."</p>
+          </div>
+        </div>
+
+        <div class="paliativo-card">
+          <img class="paliativo-card-photo" src="../depoimentos/kely.jpg" alt="Kely">
+          <div class="paliativo-card-body">
+            <p class="paliativo-card-name">Kely</p>
+            <p class="paliativo-card-mudou">"Nem eu acreditei no que foi possível fazer sozinha. Hoje me sinto muito mais segura."</p>
+          </div>
+        </div>
+
+        <div class="paliativo-card">
+          <img class="paliativo-card-photo" src="../depoimentos/viviane.jpg" alt="Viviane">
+          <div class="paliativo-card-body">
+            <p class="paliativo-card-name">Viviane</p>
+            <p class="paliativo-card-mudou">"Hoje me sinto muito mais leve e assertiva. Deixo muito mais natural, que era exatamente o que eu queria."</p>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="https://pay.kiwify.com.br/iNGDfXc" class="paliativo-cta">Quero aprender a fazer essa maquiagem</a>
+
+    </div>
+  </section>
+</div>
+
+<div class="secao-prova-social">
+<section class="prova">
+    <div class="prova-inner">
+
+      <!-- Sub-seção A: Carrossel -->
+      <p class="prova-kicker">RESULTADO DAS ALUNAS</p>
+      <h2 class="prova-headline">Uma make leve, natural e que dura. Olha só.</h2>
+
+      <div class="galeria-outer">
+        <div class="galeria galeria--antes-depois">
+          <!-- Set 1 -->
+          <div class="galeria-foto"><img src="../depoimentos/antes e depois/B4AFBC7A-5CFE-4F82-84A6-563D2CCEBD2C.JPG" alt="Resultado"></div>
+          <div class="galeria-foto"><img src="../depoimentos/antes e depois/2CB59A90-797C-4029-9AC8-F123BF9715D3.JPG" alt="Resultado"></div>
+          <div class="galeria-foto"><img src="../depoimentos/antes e depois/9fdb8860-7e73-481d-823b-9d028a1166bd.JPG" alt="Resultado"></div>
+          <div class="galeria-foto"><img src="../depoimentos/antes e depois/77e15072-3da4-437e-93b0-7c23a9164aec.JPG" alt="Resultado"></div>
+          <div class="galeria-foto"><img src="../depoimentos/antes e depois/84E0095B-6373-44FD-BD35-0483AAC72A8F.JPG" alt="Resultado"></div>
+          <div class="galeria-foto"><img src="../depoimentos/antes e depois/11142D9A-8F58-45DE-A4CD-B9755364B2A4.JPG" alt="Resultado"></div>
+          <!-- Set 2 (duplicado para loop contínuo) -->
+          <div class="galeria-foto" aria-hidden="true"><img src="../depoimentos/antes e depois/B4AFBC7A-5CFE-4F82-84A6-563D2CCEBD2C.JPG" alt=""></div>
+          <div class="galeria-foto" aria-hidden="true"><img src="../depoimentos/antes e depois/2CB59A90-797C-4029-9AC8-F123BF9715D3.JPG" alt=""></div>
+          <div class="galeria-foto" aria-hidden="true"><img src="../depoimentos/antes e depois/9fdb8860-7e73-481d-823b-9d028a1166bd.JPG" alt=""></div>
+          <div class="galeria-foto" aria-hidden="true"><img src="../depoimentos/antes e depois/77e15072-3da4-437e-93b0-7c23a9164aec.JPG" alt=""></div>
+          <div class="galeria-foto" aria-hidden="true"><img src="../depoimentos/antes e depois/84E0095B-6373-44FD-BD35-0483AAC72A8F.JPG" alt=""></div>
+          <div class="galeria-foto" aria-hidden="true"><img src="../depoimentos/antes e depois/11142D9A-8F58-45DE-A4CD-B9755364B2A4.JPG" alt=""></div>
+        </div>
+      </div>
+
+      <!-- Divisor -->
+      <div class="prova-divisor"></div>
+
+      <!-- Sub-seção B: Mural de depoimentos -->
+      <h2 class="prova-headline-grid">Em pouco tempo, a make já mudou.</h2>
+
+      <!-- Slider de depoimentos com setas -->
+      <div class="depo-wrap">
+
+        <button class="depo-btn depo-btn--prev" id="depo-prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+
+        <div class="depo-rows">
+
+          <!-- Fileira 1 -->
+          <div class="depo-row" id="depo-row1">
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/simonne.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/Cristiane Penna.JPG" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/kely.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/may.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_2234.PNG" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_2484.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/nice.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_9582.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_9726.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_9820.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_0019.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/ilana.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_0359.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_0360.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_0419.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/glicia.PNG" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_0598.PNG" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/dani.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_2015.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/viviane.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_2023.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_2249.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_2260.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_2285.jpg" alt=""></div>
+            <div class="depo-foto depo-foto--grande"><img src="../depoimentos/IMG_2478.jpg" alt=""></div>
+          </div>
+
+          <!-- Fileira 2 -->
+          <div class="depo-row" id="depo-row2">
+            <div class="depo-foto"><img src="../depoimentos/IMG_2529.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/IMG_2617.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/bruna - rainha airfryer.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/IMG_5649.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/IMG_5986.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/IMG_6464.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/camila.PNG" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/IMG_8367.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/IMG_8486.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/IMG_8499.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/amanda.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/hi.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/cleusa.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/thais.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/andreia.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/patricia.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/rosana.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/mauni.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/IMG_0600.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/IMG_2483.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/IMG_2822.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/IMG_2823.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/IMG_2824.jpg" alt=""></div>
+            <div class="depo-foto"><img src="../depoimentos/IMG_2825.jpg" alt=""></div>
+          </div>
+
+        </div>
+
+        <button class="depo-btn depo-btn--next" id="depo-next" aria-label="Próximo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+      </div>
+
+      <a href="https://pay.kiwify.com.br/iNGDfXc" class="prova-cta">Quero aprender a fazer essa maquiagem</a>
+
+  
+
+    </div>
+  </section>
+</div>
+
+<div class="secao-metodo">
+<section class="metodo">
+    <div class="metodo-inner">
+
+      <p class="metodo-kicker">O MÉTODO MAQUIAGEM EXPRESS</p>
+
+      <h2 class="metodo-headline">
+        Uma make que fica boa tem três etapas.<br>
+        A maioria das mulheres pula a primeira.
+      </h2>
+
+      <p class="metodo-intro">
+        Pense na sua pele como uma tela. Uma tela sem preparação não segura a tinta.
+        Pula esse passo e a maquiagem craqueia, migra, some.
+        O <strong>Método Maquiagem Express</strong> começa onde ninguém vê.
+      </p>
+
+      <div class="metodo-fases">
+
+        <div class="fase-card">
+          <img class="fase-foto" src="assets/fotos método/2.png" alt="Fase 1 — A Tela">
+          <div class="fase-content">
+            <p class="fase-numero">Fase 1</p>
+            <h3 class="fase-nome">A Tela</h3>
+            <p class="fase-desc">
+              Preparar a pele para receber e fixar qualquer produto.
+              Sem ela, a base craqueia na superfície e acumula nas linhas de expressão.
+            </p>
+          </div>
+        </div>
+
+        <div class="fase-card">
+          <img class="fase-foto" src="assets/fotos método/3.png" alt="Fase 2 — A Cor">
+          <div class="fase-content">
+            <p class="fase-numero">Fase 2</p>
+            <h3 class="fase-nome">A Cor</h3>
+            <p class="fase-desc">
+              Base, corretivo, blush e contorno na sequência e quantidade certas.
+              Inverter essa ordem é o que deixa a make pesada e artificial nas fotos.
+            </p>
+          </div>
+        </div>
+
+        <div class="fase-card">
+          <img class="fase-foto" src="assets/fotos método/4.png" alt="Fase 3 — O Traço">
+          <div class="fase-content">
+            <p class="fase-numero">Fase 3</p>
+            <h3 class="fase-nome">O Traço</h3>
+            <p class="fase-desc">
+              Sobrancelha, sombra e rímel fecham com definição e naturalidade.
+              Feito por último, porque o olhar precisa das outras camadas como base para aparecer.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="https://pay.kiwify.com.br/iNGDfXc" class="metodo-cta">Quero aprender o Método Maquiagem Express</a>
+
+    </div>
+  </section>
+</div>
+
+<div class="secao-para-quem">
+<section class="para-quem">
+    <div class="para-quem-inner">
+
+      <p class="para-quem-kicker">ESTE CURSO É PARA VOCÊ</p>
+
+      <h2 class="para-quem-headline">Se você deseja uma maquiagem bonita, natural,<br>que não marca nas linhas e não craqueia,</h2>
+
+      <p class="para-quem-sub">
+        O Método Maquiagem Express foi criado para mulheres que já tentaram de tudo
+        e ainda não encontraram o resultado que queriam.
+      </p>
+
+      <div class="para-quem-grid">
+
+        <!-- Card 1 -->
+        <div class="pq-card">
+          <p class="pq-titulo">Pele que parece pesada ou marcada</p>
+          <p class="pq-desc">Sente que a maquiagem está marcando linhas, poros ou deixando a pele com aparência de máscara.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="pq-card">
+          <p class="pq-titulo">Bancada cheia, mas resultado igual</p>
+          <p class="pq-desc">Já comprou vários produtos de maquiagem, mas mesmo assim não consegue deixar a pele bonita e natural.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="pq-card">
+          <p class="pq-titulo">O que funcionava antes, não funciona mais</p>
+          <p class="pq-desc">Percebe que a maquiagem que usava antes já não tem o mesmo resultado na sua pele de hoje.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="pq-card">
+          <p class="pq-titulo">Olheiras, manchas e melasma</p>
+          <p class="pq-desc">Quer aprender a cobrir imperfeições sem deixar a maquiagem pesada ou artificial nas fotos.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="pq-card">
+          <p class="pq-titulo">Maquiagem prática para o dia a dia</p>
+          <p class="pq-desc">Quer um método simples, passo a passo, que funcione para qualquer tipo de pele sem parecer exagerado.</p>
+        </div>
+
+        <!-- Card CTA -->
+        <div class="pq-card pq-card--cta">
+          <p class="pq-titulo">Se você se identificou com algum desses casos, o próximo passo está aqui.</p>
+          <p class="pq-desc">Uma única decisão pode mudar o resultado da sua maquiagem para sempre.</p>
+        </div>
+
+      </div>
+
+      <a href="https://pay.kiwify.com.br/iNGDfXc" class="pq-btn-final">
+        Quero aprender o método
+        <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+
+    </div>
+  </section>
+</div>
+
+<div class="secao-entregaveis">
+<section class="entregaveis">
+
+    <div class="entregaveis-topo">
+      <div class="entregaveis-kicker">O que você recebe</div>
+      <h2 class="entregaveis-headline">O que você vai aprender no <em>Maquiagem Express</em></h2>
+    </div>
+
+    <div class="entregaveis-carousel-wrap">
+
+      <button class="ent-seta" id="ent-prev" aria-label="Anterior">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+
+      <div class="entregaveis-scroll" id="ent-scroll">
+
+        <div class="ent-card">
+          <img class="ent-foto" src="assets/fotos%20m%C3%A9todo/entregáveis/m%C3%B3dulo%201.png" alt="Módulo Skincare">
+          <div class="ent-body">
+            <p class="ent-numero">Módulo 01</p>
+            <h3 class="ent-nome">Aula Inaugural</h3>
+            <p class="ent-desc">Apresentação do curso, tour pela plataforma e tudo que você precisa saber para começar com o pé direito.</p>
+          </div>
+        </div>
+
+        <div class="ent-card">
+          <img class="ent-foto" src="assets/fotos%20m%C3%A9todo/entregáveis/m%C3%B3dulo%202.png" alt="Primeiros Passos">
+          <div class="ent-body">
+            <p class="ent-numero">Módulo 02</p>
+            <h3 class="ent-nome">Skincare</h3>
+            <p class="ent-desc">A preparação que faz qualquer maquiagem durar mais. Marcela mostra o passo a passo para preparar a pele antes de começar.</p>
+          </div>
+        </div>
+
+        <div class="ent-card">
+          <img class="ent-foto" src="assets/fotos%20m%C3%A9todo/entregáveis/m%C3%B3dulo%203.png" alt="Maquiagem Pele">
+          <div class="ent-body">
+            <p class="ent-numero">Módulo 03</p>
+            <h3 class="ent-nome">Primeiros Passos</h3>
+            <p class="ent-desc">Lista exata de produtos para começar sem gastar à toa. Como encontrar seu tom de base na primeira tentativa.</p>
+          </div>
+        </div>
+
+        <div class="ent-card">
+          <img class="ent-foto" src="assets/fotos%20m%C3%A9todo/entregáveis/m%C3%B3dulo%204.png" alt="Maquiagem Olhos">
+          <div class="ent-body">
+            <p class="ent-numero">Módulo 04</p>
+            <h3 class="ent-nome">Maquiagem Pele</h3>
+            <p class="ent-desc">8 aulas: base, contorno, blush, olheiras, melasma e finalização. A sequência certa que muda o resultado.</p>
+          </div>
+        </div>
+
+        <div class="ent-card">
+          <img class="ent-foto" src="assets/fotos%20m%C3%A9todo/entregáveis/m%C3%B3dulo%205.png" alt="Datas Especiais">
+          <div class="ent-body">
+            <p class="ent-numero">Módulo 05</p>
+            <h3 class="ent-nome">Maquiagem Olhos</h3>
+            <p class="ent-desc">Sombra, delineado e cílios postiços. Do básico para iniciantes ao olho marcado para eventos noturnos.</p>
+          </div>
+        </div>
+
+        <div class="ent-card">
+          <img class="ent-foto" src="assets/fotos%20m%C3%A9todo/entregáveis/m%C3%B3dulo%206.png" alt="Pincéis e Esponjas">
+          <div class="ent-body">
+            <p class="ent-numero">Módulo 06</p>
+            <h3 class="ent-nome">Datas Especiais</h3>
+            <p class="ent-desc">A maquiagem certa para aniversários e batizados. Elegante, que dura e que você faz sozinha.</p>
+          </div>
+        </div>
+
+        <div class="ent-card">
+          <img class="ent-foto" src="assets/fotos%20m%C3%A9todo/entregáveis/m%C3%B3dulo%207.png" alt="Grupo de Alunas">
+          <div class="ent-body">
+            <p class="ent-numero">Módulo 07</p>
+            <h3 class="ent-nome">Pincéis e Esponjas</h3>
+            <p class="ent-desc">Quais pincéis fazem diferença, como usar cada um e como higienizar para durar mais.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="ent-seta" id="ent-next" aria-label="Próximo">
+        <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+
+    </div>
+
+    <div class="entregaveis-rodape" style="justify-content:center;">
+      <a href="https://pay.kiwify.com.br/iNGDfXc" class="entregaveis-cta">Quero começar agora</a>
+    </div>
+
+  </section>
+</div>
+
+<!-- ===== SEÇÃO BÔNUS ===== -->
+<style>
+  .secao-bonus *, .secao-bonus *::before, .secao-bonus *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  .secao-bonus { background: #FAF4EE; font-family: 'Montserrat', sans-serif; }
+
+  .bon-section { background: #FAF4EE; padding: 80px 40px; }
+
+  .bon-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 72px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .bon-header-kicker {
+    display: inline-flex; align-items: center; gap: 6px;
+    border: 1px solid rgba(176,128,96,0.4); border-radius: 50px;
+    padding: 5px 14px; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase; color: #7A4A2A;
+    margin-bottom: 18px;
+  }
+
+  .bon-titulo {
+    font-size: clamp(22px, 2.6vw, 30px);
+    font-weight: 700; color: #26150B; line-height: 1.25;
+    margin-bottom: 32px;
+  }
+  .bon-titulo em { font-style: normal; color: #B08060; }
+
+  .bon-item {
+    display: flex; gap: 16px; align-items: flex-start;
+    margin-bottom: 28px; padding-bottom: 28px;
+    border-bottom: 1px solid rgba(176,128,96,0.15);
+  }
+  .bon-item:last-of-type { border-bottom: none; margin-bottom: 32px; padding-bottom: 0; }
+
+  .bon-numero {
+    min-width: 36px; height: 36px;
+    background: #26150B; color: #FAF4EE;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .bon-item-nome {
+    font-size: 13px; font-weight: 700; color: #26150B; margin-bottom: 4px;
+  }
+  .bon-item-desc {
+    font-size: 13px; color: #5C3A22; line-height: 1.6; margin-bottom: 6px;
+  }
+  .bon-item-preco {
+    font-size: 12px; color: #7A5040;
+  }
+  .bon-item-preco s { color: #B0907A; }
+  .bon-item-preco strong { color: #5B8C3A; }
+
+  .bon-cta-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    background: #5B8C3A; color: #FFFFFF;
+    padding: 15px 36px; border-radius: 50px; border: none;
+    font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.18em;
+    text-transform: uppercase; text-decoration: none; cursor: pointer;
+    position: relative; overflow: hidden;
+    box-shadow: 0 4px 20px rgba(60,100,30,0.30);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  .bon-cta-btn::after {
+    content: '';
+    position: absolute; top: -50%; left: -75%; width: 50%; height: 200%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+    transform: skewX(-20deg); animation: btn-shimmer 3s infinite;
+  }
+  .bon-cta-btn:hover { background: #4A7230; transform: translateY(-2px); }
+
+  .bon-mockup-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bon-mockup-wrap img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 700px) {
+    .bon-section { padding: 60px 24px; }
+    .bon-layout { display: flex; flex-direction: column; align-items: center; gap: 0; }
+    .bon-esquerda { display: contents; }
+    .bon-header-kicker { order: 1; display: flex; justify-content: center; width: 100%; margin-bottom: 14px; }
+    .bon-titulo { order: 2; width: 100%; text-align: center; margin-bottom: 24px; }
+    .bon-mockup-wrap { order: 3; width: 100%; justify-content: center; margin-bottom: 28px; }
+    .bon-mockup-wrap img { max-width: 280px; }
+    .bon-item { order: 4; width: 100%; }
+    .bon-cta-btn { order: 5; width: 100%; text-align: center; margin-top: 8px; }
+  }
+</style>
+
+<div class="secao-bonus">
+<section class="bon-section">
+  <div class="bon-layout">
+
+    <!-- Coluna esquerda: lista dos 3 bônus -->
+    <div class="bon-esquerda">
+      <div class="bon-header-kicker">Incluído na sua compra</div>
+      <h2 class="bon-titulo">Ao adquirir o <em>Maquiagem Express</em>, você leva mais 3 presentes.</h2>
+
+      <div class="bon-item">
+        <div class="bon-numero">1</div>
+        <div>
+          <p class="bon-item-nome">Guia de Pincéis e Esponjas</p>
+          <p class="bon-item-desc">Quais pincéis realmente fazem diferença, como usar cada um na sequência certa e como higienizar para durar anos.</p>
+          <p class="bon-item-preco">De <s>R$ 37,00</s> por <strong>R$ 0,00</strong></p>
+        </div>
+      </div>
+
+      <div class="bon-item">
+        <div class="bon-numero">2</div>
+        <div>
+          <p class="bon-item-nome">Aulas de Cabelo: Escova e Trioondas</p>
+          <p class="bon-item-desc">Aprenda a fazer escova e trioondas em casa com resultado de salão. O complemento perfeito para fechar o visual completo.</p>
+          <p class="bon-item-preco">De <s>R$ 47,00</s> por <strong>R$ 0,00</strong></p>
+        </div>
+      </div>
+
+      <div class="bon-item">
+        <div class="bon-numero">3</div>
+        <div>
+          <p class="bon-item-nome">Aula de Skincare</p>
+          <p class="bon-item-desc">A rotina de cuidados que prepara a pele antes da make para o resultado ficar mais jovem, uniforme e duradouro.</p>
+          <p class="bon-item-preco">De <s>R$ 47,00</s> por <strong>R$ 0,00</strong></p>
+        </div>
+      </div>
+
+      <a href="https://pay.kiwify.com.br/iNGDfXc" class="bon-cta-btn">Quero o curso e todos os bônus →</a>
+    </div>
+
+    <!-- Coluna direita: imagem dos bônus -->
+    <div class="bon-mockup-wrap">
+      <img src="assets/B%C3%94NUS/B%C3%94NUS.png" alt="Bônus incluídos na sua compra" />
+    </div>
+
+  </div>
+</section>
+</div>
+
+<!-- ===== SEÇÃO STACK DE VALOR ===== -->
+<style>
+  .sv *, .sv *::before, .sv *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  .sv {
+    background: #1A0905;
+    font-family: 'Montserrat', sans-serif;
+    padding: 110px 32px 80px;
+  }
+  .sv-grid {
+    max-width: 980px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    align-items: stretch;
+  }
+
+  /* ── Card esquerdo ── */
+  .sv-col { position: relative; padding-top: 90px; }
+  .sv-mockup {
+    position: absolute;
+    top: -40px; left: 50%;
+    transform: translateX(-50%);
+    width: 82%; max-width: 280px;
+    z-index: 3;
+    filter: drop-shadow(0 16px 32px rgba(0,0,0,0.6));
+    pointer-events: none;
+  }
+  .sv-card-esq {
+    background: #3A1C0E;
+    border-radius: 24px;
+    padding: 76px 32px 36px;
+    height: 100%;
+    display: flex; flex-direction: column; justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .sv-card-esq:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 48px rgba(0,0,0,0.5);
+  }
+  .sv-lista { list-style: none; display: flex; flex-direction: column; gap: 18px; margin-bottom: 28px; }
+  .sv-lista li { display: flex; align-items: center; gap: 14px; }
+  .sv-chk {
+    width: 28px; height: 28px; flex-shrink: 0; border-radius: 50%;
+    border: 2px solid rgba(250,244,238,0.3);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .sv-chk svg { width: 13px; height: 13px; }
+  .sv-item { flex: 1; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .sv-nome { font-size: 13px; font-weight: 600; color: #FAF4EE; line-height: 1.4; }
+  .sv-sub { font-size: 10px; color: #B08060; font-weight: 400; display: block; margin-top: 2px; }
+  .sv-val { font-size: 11px; color: #B08060; font-weight: 700; flex-shrink: 0; }
+  .sv-hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin-bottom: 16px; }
+  .sv-total { display: flex; justify-content: space-between; align-items: center; }
+  .sv-total-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: #B08060; }
+  .sv-total-num { font-size: 17px; font-weight: 700; color: rgba(250,244,238,0.3); text-decoration: line-through; }
+  .sv-rodape { margin-top: 28px; font-size: 13px; font-weight: 700; color: rgba(250,244,238,0.7); text-align: center; }
+
+  /* ── Card direito ── */
+  .sv-card-dir {
+    background: #7A3820;
+    border-radius: 24px;
+    padding: 36px 32px 36px;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    justify-content: space-between;
+    gap: 0; height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .sv-card-dir:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 48px rgba(0,0,0,0.45), 0 0 0 2px rgba(176,128,96,0.3);
+  }
+  .sv-card-dir > * { margin: 8px 0; }
+  .sv-card-dir > .sv-preco-bloco { margin: 4px 0; }
+  .sv-card-dir > .sv-cta { margin: 12px 0; }
+  .sv-pill {
+    background: rgba(250,244,238,0.15);
+    border-radius: 12px;
+    padding: 14px 20px;
+    font-size: 13px; font-style: italic; color: #FAF4EE;
+    line-height: 1.55; width: 100%;
+  }
+  .sv-pill s { opacity: 0.6; }
+  .sv-hoje {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: rgba(250,244,238,0.65);
+  }
+  .sv-preco-bloco {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+  }
+  .sv-12x {
+    display: flex; flex-direction: column; align-items: flex-end; gap: 0;
+    line-height: 1;
+  }
+  .sv-12x-num { font-size: 26px; font-weight: 800; color: #FAF4EE; }
+  .sv-12x-de { font-size: 11px; font-weight: 600; color: rgba(250,244,238,0.65); letter-spacing: 0.08em; text-transform: uppercase; }
+  .sv-big {
+    display: flex; align-items: flex-start; gap: 3px; line-height: 1;
+  }
+  .sv-rs { font-size: 22px; font-weight: 700; color: #FAF4EE; margin-top: 8px; }
+  .sv-num { font-size: 72px; font-weight: 800; color: #FAF4EE; }
+  .sv-vista { font-size: 13px; color: rgba(250,244,238,0.6); }
+  .sv-cta {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    background: #5B8C3A; color: #FFFFFF;
+    padding: 16px 24px; border-radius: 50px;
+    font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none;
+    width: 100%; position: relative; overflow: hidden;
+    box-shadow: 0 4px 20px rgba(60,100,30,0.4);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  .sv-cta::after {
+    content: ''; position: absolute; top: -50%; left: -75%; width: 50%; height: 200%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+    transform: skewX(-20deg); animation: btn-shimmer 3s infinite;
+  }
+  .sv-cta:hover { background: #4A7230; transform: translateY(-2px); }
+  .sv-selos {
+    display: flex; gap: 16px; justify-content: center; width: 100%;
+  }
+  .sv-selo {
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    font-size: 9px; font-weight: 600; color: rgba(250,244,238,0.55);
+    letter-spacing: 0.06em; text-transform: uppercase; flex: 1;
+  }
+  .sv-selo svg { width: 22px; height: 22px; color: rgba(250,244,238,0.5); }
+  .sv-pgtos {
+    display: flex; flex-wrap: wrap; gap: 5px 8px; justify-content: center;
+    font-size: 9px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: rgba(250,244,238,0.4);
+  }
+  .sv-pgtos span {
+    background: rgba(255,255,255,0.08); border-radius: 4px;
+    padding: 4px 7px;
+  }
+  .sv-seguro {
+    font-size: 11px; color: rgba(250,244,238,0.45);
+    line-height: 1.5;
+  }
+
+  .sv-headline {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 52px;
+  }
+  .sv-h2 {
+    font-size: clamp(24px, 3vw, 38px);
+    font-weight: 800;
+    color: #FAF4EE;
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+  .sv-h2 s {
+    color: #C0392B;
+    text-decoration-color: #C0392B;
+    font-weight: 800;
+  }
+  .sv-h2-sub {
+    font-size: clamp(15px, 1.8vw, 20px);
+    font-weight: 500;
+    color: rgba(250,244,238,0.75);
+    font-style: italic;
+  }
+  .sv-h2-sub strong {
+    color: #B08060;
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 0.06em;
+  }
+
+  @media (max-width: 700px) {
+    .sv { padding: 90px 20px 60px; }
+    .sv-grid { grid-template-columns: 1fr; gap: 28px; }
+    .sv-headline { margin-bottom: 36px; }
+    .sv-col { padding-top: 80px; }
+    .sv-num { font-size: 58px; }
+    .sv-card-esq { padding: 90px 24px 32px; }
+    .sv-card-dir { padding: 30px 24px 32px; }
+  }
+</style>
+
+<div id="oferta" class="sv">
+
+<div class="sv-headline">
+  <h2 class="sv-h2">Tudo isso poderia ser vendido separadamente por <s>R$ 628</s></h2>
+  <p class="sv-h2-sub">Mas você está levando tudo junto por apenas <strong>R$ 297.</strong></p>
+</div>
+
+<div class="sv-grid">
+
+  <!-- Card esquerdo: checklist -->
+  <div class="sv-col">
+    <img class="sv-mockup" src="assets/B%C3%94NUS/B%C3%94NUS2.png" alt="Bônus Maquiagem Express" />
+    <div class="sv-card-esq">
+      <div>
+        <ul class="sv-lista">
+          <li>
+            <span class="sv-chk"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF4EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div class="sv-item">
+              <span class="sv-nome">Curso Maquiagem Express<span class="sv-sub">7 módulos + grupo de alunas</span></span>
+              <span class="sv-val">R$ 497</span>
+            </div>
+          </li>
+          <li>
+            <span class="sv-chk"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF4EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div class="sv-item">
+              <span class="sv-nome">Guia de Pincéis e Esponjas<span class="sv-sub">Bônus 1</span></span>
+              <span class="sv-val">R$ 37</span>
+            </div>
+          </li>
+          <li>
+            <span class="sv-chk"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF4EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div class="sv-item">
+              <span class="sv-nome">Escova e Triondas em Casa<span class="sv-sub">Bônus 2</span></span>
+              <span class="sv-val">R$ 47</span>
+            </div>
+          </li>
+          <li>
+            <span class="sv-chk"><svg viewBox="0 0 24 24" fill="none" stroke="#FAF4EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div class="sv-item">
+              <span class="sv-nome">Aula de Skincare<span class="sv-sub">Bônus 3</span></span>
+              <span class="sv-val">R$ 47</span>
+            </div>
+          </li>
+        </ul>
+        <hr class="sv-hr" />
+        <div class="sv-total">
+          <span class="sv-total-label">Valor total</span>
+          <span class="sv-total-num">R$ 628,00</span>
+        </div>
+      </div>
+      <p class="sv-rodape">1 ano de acesso após confirmação</p>
+    </div>
+  </div>
+
+  <!-- Card direito: preço -->
+  <div class="sv-col" style="padding-top:0;">
+    <div class="sv-card-dir">
+      <div class="sv-pill">
+        O valor de tudo isso passaria de <s>R$ 628,00</s>
+      </div>
+      <p class="sv-hoje">Hoje, seu acesso sai por apenas:</p>
+      <div class="sv-preco-bloco">
+        <div class="sv-12x">
+          <span class="sv-12x-num">12X</span>
+          <span class="sv-12x-de">DE</span>
+        </div>
+        <div class="sv-big">
+          <span class="sv-rs">R$</span>
+          <span class="sv-num">30,72</span>
+        </div>
+      </div>
+      <p class="sv-vista">Ou R$ 297,00 à vista</p>
+      <a href="https://pay.kiwify.com.br/iNGDfXc" class="sv-cta">Quero começar agora →</a>
+      <img src="assets/B%C3%94NUS/kiwify-pagamentops-autorizados.png" alt="Pagamentos autorizados Kiwify" style="width:100%; max-width:340px; display:block; margin:0 auto;" />
+      <p class="sv-seguro">Acesso liberado imediatamente após o pagamento.</p>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ===== SEÇÃO GARANTIA ===== -->
+<style>
+  .gar *, .gar *::before, .gar *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  .gar {
+    background: #FAF4EE;
+    font-family: 'Montserrat', sans-serif;
+    padding: 80px 40px;
+  }
+  .gar-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 12px 48px;
+  }
+  .gar-topo { grid-column: 1; grid-row: 1; }
+  .gar-corpo { grid-column: 1; grid-row: 2; align-self: start; }
+  .gar-direita { grid-column: 2; grid-row: 1 / 3; align-self: center; }
+  .gar-kicker {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid #B08060; border-radius: 50px;
+    padding: 6px 16px; margin-bottom: 20px;
+    font-size: 10px; font-weight: 700; letter-spacing: 0.18em;
+    text-transform: uppercase; color: #7A5040;
+  }
+  .gar-kicker svg { width: 14px; height: 14px; flex-shrink: 0; }
+  .gar-h2 {
+    font-size: clamp(26px, 3vw, 40px);
+    font-weight: 800;
+    color: #26150B;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .gar-h2 span { color: #B08060; }
+  .gar-body { font-size: 15px; color: #5A3A28; line-height: 1.75; }
+  .gar-body p { margin-bottom: 14px; }
+  .gar-body p:last-child { margin-bottom: 0; }
+  .gar-body strong { color: #7A3820; }
+  /* Hexágono */
+  .gar-direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .gar-hex-wrap {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gar-hex-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .gar-hex-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #FAF4EE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  .gar-hex-num {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1;
+    color: #FAF4EE;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .gar-hex-label {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FAF4EE;
+    line-height: 1.3;
+  }
+  .gar-gear {
+    position: absolute;
+    opacity: 0.18;
+    top: -20px; right: -20px;
+    width: 100px;
+  }
+  .gar-fechamento {
+    max-width: 680px;
+    margin: 56px auto 0;
+    text-align: center;
+  }
+  .gar-fech-h3 {
+    font-size: clamp(20px, 2.4vw, 30px);
+    font-weight: 700;
+    color: #26150B;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .gar-fech-h3 strong { color: #B08060; font-weight: 900; }
+  .gar-fech-sub {
+    font-size: 15px;
+    color: #5A3A28;
+    margin-bottom: 28px;
+  }
+  .gar-fech-cta {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    background: #5B8C3A; color: #FFFFFF;
+    padding: 16px 40px; border-radius: 50px;
+    font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none;
+    position: relative; overflow: hidden;
+    box-shadow: 0 4px 20px rgba(60,100,30,0.4);
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-bottom: 24px;
+  }
+  .gar-fech-cta::after {
+    content: ''; position: absolute; top: -50%; left: -75%; width: 50%; height: 200%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+    transform: skewX(-20deg); animation: btn-shimmer 3s infinite;
+  }
+  .gar-fech-cta:hover { background: #4A7230; transform: translateY(-2px); }
+  .gar-fech-badges {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .gar-fech-badges span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #7A5040;
+  }
+
+  @media (max-width: 700px) {
+    .gar { padding: 60px 24px; }
+    .gar-inner {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 24px;
+    }
+    .gar-topo { grid-column: 1; grid-row: 1; text-align: center; }
+    .gar-direita { grid-column: 1; grid-row: 2; order: unset; }
+    .gar-corpo { grid-column: 1; grid-row: 3; text-align: center; }
+    .gar-kicker { margin: 0 auto 20px; }
+  }
+</style>
+
+<section class="gar">
+  <div class="gar-inner">
+
+    <!-- Topo esquerdo: kicker + headline -->
+    <div class="gar-topo">
+      <div class="gar-kicker">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Sem riscos e sem burocracias
+      </div>
+      <h2 class="gar-h2">Proteção total. <span>Seu dinheiro protegido por 7 dias.</span></h2>
+    </div>
+
+    <!-- Corpo esquerdo: texto -->
+    <div class="gar-corpo gar-body">
+      <p>A Lei 8.078 garante 7 dias de garantia para qualquer compra online. Muitos oferecem isso como se fosse um diferencial.</p>
+      <p><strong>Aqui você tem os mesmos 7 dias, com uma diferença: sem perguntas, sem burocracia e sem enrolação.</strong></p>
+      <p>Se em 7 dias você não estiver satisfeita com o curso, é só pedir o reembolso pelo nosso suporte. Devolvemos 100% do seu investimento.</p>
+      <p>Você entra sem risco. Ou aprende a técnica que vai mudar sua maquiagem, ou recupera cada centavo que pagou.</p>
+    </div>
+
+    <!-- Direita: imagem garantia -->
+    <div class="gar-direita">
+      <img src="assets/B%C3%94NUS/4.png" alt="7 dias de garantia" style="width:100%; max-width:340px; display:block; filter:drop-shadow(0 12px 32px rgba(0,0,0,0.18));" />
+    </div>
+
+  </div>
+
+  <!-- Fechamento da garantia -->
+  <div class="gar-fechamento">
+    <h3 class="gar-fech-h3">Você não tem <strong>ABSOLUTAMENTE</strong> nada a perder, porque o risco aqui é todo nosso.</h3>
+    <p class="gar-fech-sub">Clique no botão abaixo e comece a aprender a técnica agora.</p>
+    <a href="https://pay.kiwify.com.br/iNGDfXc" class="gar-fech-cta">Quero começar agora →</a>
+    <div class="gar-fech-badges">
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Compra Segura
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
+        Satisfação Garantida
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Privacidade Protegida
+      </span>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== SEÇÃO AUTORIDADE ===== -->
+<style>
+  .aut *, .aut *::before, .aut *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  .aut {
+    background: #FAF4EE;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    overflow: hidden;
+    min-height: 620px;
+    display: flex;
+    align-items: stretch;
+  }
+  .aut-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  /* Topo esquerdo: headline */
+  .aut-topo {
+    grid-column: 1; grid-row: 1;
+    padding: 72px 48px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+  }
+  /* Corpo esquerdo: bio + CTA */
+  .aut-corpo {
+    grid-column: 1; grid-row: 2;
+    padding: 0 48px 72px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+  }
+  .aut-stat-line {
+    font-size: 13px;
+    color: #5A3A28;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  .aut-stat-line strong { color: #26150B; font-weight: 800; }
+  .aut-h2 {
+    font-size: clamp(32px, 3.5vw, 52px);
+    font-weight: 800;
+    color: #26150B;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .aut-h2 em {
+    font-style: normal;
+    color: #B08060;
+  }
+  .aut-bio {
+    font-size: 14px;
+    color: #5A3A28;
+    line-height: 1.8;
+    margin-bottom: 28px;
+  }
+  .aut-bio p { margin-bottom: 12px; }
+  .aut-bio p:last-child { margin-bottom: 0; }
+  .aut-bio strong { color: #26150B; }
+  .aut-closing {
+    font-size: 22px;
+    font-weight: 700;
+    color: #7A3820;
+    font-style: italic;
+    margin-bottom: 32px;
+    line-height: 1.3;
+    text-align: center;
+  }
+  .aut-cta {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    background: #5B8C3A; color: #FFFFFF;
+    padding: 16px 36px; border-radius: 50px; align-self: center;
+    font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none;
+    position: relative; overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+  }
+  .aut-cta::after {
+    content: ''; position: absolute; top: -50%; left: -75%; width: 50%; height: 200%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+    transform: skewX(-20deg); animation: btn-shimmer 3s infinite;
+  }
+  .aut-cta:hover { background: #4A7230; transform: translateY(-2px); }
+  .aut-badges {
+    display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;
+  }
+  .aut-badges span {
+    display: flex; align-items: center; gap: 5px;
+    font-size: 10px; font-weight: 600; letter-spacing: 0.06em;
+    text-transform: uppercase; color: #7A5040;
+  }
+  /* Coluna direita: foto (ocupa as duas linhas) */
+  .aut-dir {
+    grid-column: 2; grid-row: 1 / 3;
+    position: relative;
+    overflow: hidden;
+  }
+  .aut-foto-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; color: rgba(38,21,11,0.25); font-weight: 500;
+    letter-spacing: 0.05em;
+    overflow: hidden;
+  }
+  .aut-foto-placeholder img {
+    width: 100%; height: 100%; object-fit: cover; object-position: top right;
+  }
+  /* Gradiente de fusão na borda esquerda da foto */
+  .aut-dir::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0; width: 140px;
+    background: linear-gradient(to right, #FAF4EE, transparent);
+    z-index: 1;
+    pointer-events: none;
+  }
+  /* Badge social (coluna de texto - oculto em todos os tamanhos) */
+  .aut-social-badge { display: none; }
+  /* Badge sobreposto à foto (desktop + mobile) */
+  .aut-badge-mobile {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  }
+  .aut-badge-mobile img {
+    display: block;
+    width: auto;
+    max-width: 280px;
+    height: auto;
+  }
+  /* Gradiente de fusão na borda direita da foto */
+  .aut-dir::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 0; bottom: 0; width: 100px;
+    background: linear-gradient(to left, #FAF4EE, transparent);
+    z-index: 1;
+    pointer-events: none;
+  }
+  /* Mobile */
+  @media (max-width: 700px) {
+    .aut { min-height: unset; }
+    .aut-layout { grid-template-columns: 1fr; grid-template-rows: auto; }
+    .aut-topo { order: 1; grid-column: 1; grid-row: auto; padding: 40px 24px 0; text-align: center; }
+    .aut-dir  { order: 2; grid-column: 1; grid-row: auto; height: auto; position: relative; overflow: hidden; margin-top: -48px; }
+    .aut-corpo{ order: 3; grid-column: 1; grid-row: auto; padding: 0 24px 48px; text-align: center; }
+    /* Foto em proporção natural no mobile */
+    .aut-foto-placeholder { position: relative; inset: auto; display: block; }
+    .aut-foto-placeholder img { width: 100%; height: auto; object-fit: unset; object-position: unset; display: block; }
+    /* Gradientes topo e base no mobile */
+    .aut-dir::before {
+      display: block;
+      position: absolute;
+      left: 0; right: 0; top: 0; bottom: auto; width: auto;
+      height: 80px;
+      background: linear-gradient(to bottom, #FAF4EE, transparent);
+      z-index: 1;
+    }
+    .aut-dir::after {
+      display: block;
+      position: absolute;
+      left: 0; right: 0; bottom: 0; top: auto; width: auto;
+      height: 80px;
+      background: linear-gradient(to top, #FAF4EE, transparent);
+      z-index: 1;
+    }
+    .aut-cta { align-self: center; }
+    .aut-badges { justify-content: center; }
+    .aut-social-badge { display: none; }
+    /* Badge sobreposto na foto no mobile */
+    .aut-badge-mobile {
+      display: block;
+      position: absolute;
+      bottom: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+  }
+</style>
+
+<section class="aut">
+  <div class="aut-layout">
+
+    <!-- Topo: headline (aparece primeiro no mobile) -->
+    <div class="aut-topo">
+      <p class="aut-stat-line"><strong>+5.000 mulheres</strong> já aprenderam a se maquiar com elegância.</p>
+      <h2 class="aut-h2">Quem é<br><em>Marcela Dezan?</em></h2>
+    </div>
+
+    <!-- Corpo: resto do texto (aparece depois da foto no mobile) -->
+    <div class="aut-corpo">
+      <div class="aut-bio">
+        <p>Sou a Marcela, criadora do Método Pele de Seda e do curso Maquiagem Express, desenvolvidos para mulheres que querem se maquiar de forma bonita, natural e sem complicação.</p>
+        <p>Tenho 38 anos, sou casada, mãe, empreendedora e influenciadora digital, com <strong>mais de 700 mil mulheres</strong> que acompanham meu trabalho diariamente nas redes sociais.</p>
+        <p>Sou formada em Biomedicina, mas foi na maquiagem que encontrei minha verdadeira paixão. Há mais de 6 anos trabalho como maquiadora profissional e educadora, ajudando mulheres a se maquiarem com leveza, segurança e elegância.</p>
+      </div>
+      <p class="aut-closing">Agora chegou a sua vez.</p>
+      <!-- Badge social -->
+      <div class="aut-social-badge">
+        <img src="fotos%20marcela/REDE%20SOCIAL.png" alt="Marcela Dezan nas redes sociais" />
+      </div>
+      <a href="https://pay.kiwify.com.br/iNGDfXc" class="aut-cta">Quero começar agora →</a>
+      <div class="aut-badges">
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Compra Segura
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="20 6 9 17 4 12"/></svg>
+          Satisfação Garantida
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Privacidade Protegida
+        </span>
+      </div>
+    </div>
+
+    <!-- Direita: foto -->
+    <div class="aut-dir">
+      <div class="aut-foto-placeholder">
+        <img src="fotos%20marcela/FOTO%20MARCELA%20AUTORIDADE.JPG" alt="Marcela Dezan" />
+      </div>
+      <!-- Badge mobile (sobreposto na foto) -->
+      <div class="aut-badge-mobile">
+        <img src="fotos%20marcela/REDE%20SOCIAL.png" alt="Marcela Dezan nas redes sociais" />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── FAQ ─────────────────────────────────────────── -->
+<style>
+.faq { background: #F2E5DC; padding: 80px 24px; }
+.faq-inner {
+  max-width: 1100px; margin: 0 auto;
+  background: #FFFAF7;
+  border-radius: 24px;
+  box-shadow: 0 8px 48px rgba(122,56,32,0.10);
+  padding: 56px 48px;
+}
+.faq-kicker {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(176,128,96,0.1); border: 1px solid rgba(176,128,96,0.3);
+  border-radius: 50px; padding: 6px 14px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+  color: #7A3820; text-transform: uppercase; margin-bottom: 20px;
+}
+.faq-h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(28px, 3vw, 44px); font-weight: 800;
+  color: #B08060; margin-bottom: 36px; line-height: 1.15;
+}
+.faq-h2 em { font-style: normal; color: #26150B; }
+.faq-layout { display: grid; grid-template-columns: 1fr 320px; gap: 40px; align-items: start; }
+/* Accordion — cards separados */
+.faq-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.faq-item {
+  background: #fff;
+  border: 1px solid #EDE0D4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.faq-q {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 16px 18px; text-align: left;
+}
+.faq-q-left { display: flex; align-items: center; gap: 10px; }
+.faq-num { font-size: 11px; font-weight: 700; color: #B08060; letter-spacing: 0.05em; white-space: nowrap; }
+.faq-q-text { font-size: 14px; font-weight: 600; color: #26150B; font-family: 'Montserrat', sans-serif; }
+.faq-icon {
+  width: 26px; height: 26px; flex-shrink: 0;
+  border: 1.5px solid #B08060; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #B08060; font-size: 18px; font-weight: 300;
+  transition: transform 0.25s;
+}
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+.faq-a { display: none; padding: 0 18px 16px 40px; font-size: 13px; color: #5A3A28; line-height: 1.8; font-family: 'Montserrat', sans-serif; }
+.faq-item.open .faq-a { display: block; }
+/* Card de suporte */
+.faq-card { background: #7A3820; border-radius: 20px; padding: 28px 24px 32px; position: sticky; top: 24px; }
+.faq-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.faq-card-avatar { width: 44px; height: 44px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 2px solid rgba(255,255,255,0.4); }
+.faq-card-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+.faq-card-name { font-size: 13px; font-weight: 700; color: #fff; line-height: 1.3; font-family: 'Montserrat', sans-serif; }
+.faq-card-sub { font-size: 11px; color: rgba(255,255,255,0.7); font-family: 'Montserrat', sans-serif; }
+.faq-card-body { font-size: 18px; font-weight: 700; color: #fff; line-height: 1.5; margin-bottom: 28px; font-family: 'Montserrat', sans-serif; }
+.faq-card-cta {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: fit-content; margin: 0 auto;
+  background: #5B8C3A; color: #fff;
+  border: none; border-radius: 50px; padding: 16px 36px;
+  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none;
+  position: relative; overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: background 0.3s ease, transform 0.2s ease; cursor: pointer;
+}
+.faq-card-cta::after {
+  content: ''; position: absolute; top: -50%; left: -75%; width: 50%; height: 200%;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+  transform: skewX(-20deg); animation: btn-shimmer 3s infinite;
+}
+.faq-card-cta:hover { background: #4a7230; transform: translateY(-2px); }
+@media (max-width: 700px) {
+  .faq { padding: 56px 16px; }
+  .faq-inner { padding: 32px 20px; border-radius: 16px; }
+  .faq-layout { grid-template-columns: 1fr; }
+  .faq-card { position: static; }
+}
+</style>
+
+<section class="faq">
+  <div class="faq-inner">
+    <span class="faq-kicker">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+      A sua dúvida pode estar aqui
+    </span>
+    <h2 class="faq-h2">Perguntas <em>Frequentes</em></h2>
+    <div class="faq-layout">
+      <ul class="faq-list">
+        <li class="faq-item">
+          <button class="faq-q">
+            <span class="faq-q-left"><span class="faq-num">01 |</span><span class="faq-q-text">Funciona para quem está começando do zero?</span></span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">O curso começa pela lista de produtos para iniciar, passando pela escolha da base ideal para o seu tom de pele. Não é preciso ter experiência prévia. O método foi criado para mulheres que nunca se maquiaram e para quem se maquia há anos mas nunca teve resultado consistente.</div>
+        </li>
+        <li class="faq-item">
+          <button class="faq-q">
+            <span class="faq-q-left"><span class="faq-num">02 |</span><span class="faq-q-text">Preciso comprar muitos produtos novos?</span></span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Não. O módulo de primeiros passos mostra quais produtos fazem 80% do resultado. A maioria das alunas já tinha grande parte da lista em casa antes de começar. O que muda é a sequência e a técnica de aplicação, não o número de produtos.</div>
+        </li>
+        <li class="faq-item">
+          <button class="faq-q">
+            <span class="faq-q-left"><span class="faq-num">03 |</span><span class="faq-q-text">Funciona para pele oleosa?</span></span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Sim. A fase de preparação do método inclui os ajustes certos para pele oleosa, incluindo qual tipo de primer e base funcionam para esse tipo de pele. A finalização com pó e bruma também tem um módulo específico para pele oleosa.</div>
+        </li>
+        <li class="faq-item">
+          <button class="faq-q">
+            <span class="faq-q-left"><span class="faq-num">04 |</span><span class="faq-q-text">Funciona para pele madura, com linhas de expressão?</span></span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">É exatamente para isso que o curso foi criado. A maioria das técnicas ensinadas resolve diretamente o craquelamento nas linhas de expressão, o acúmulo de base nos poros e o acabamento que envelhece em vez de valorizar.</div>
+        </li>
+        <li class="faq-item">
+          <button class="faq-q">
+            <span class="faq-q-left"><span class="faq-num">05 |</span><span class="faq-q-text">Quanto tempo tenho acesso ao curso?</span></span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Você tem acesso por 1 ano. Tempo mais do que suficiente para assistir no seu ritmo, rever as aulas quantas vezes precisar e colocar em prática cada módulo.</div>
+        </li>
+        <li class="faq-item">
+          <button class="faq-q">
+            <span class="faq-q-left"><span class="faq-num">06 |</span><span class="faq-q-text">Tem suporte durante o curso?</span></span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Sim. O curso tem um grupo de alunas no WhatsApp onde você pode esclarecer dúvidas diretamente com a Marcela durante todo o aprendizado. Dúvida sobre produto, técnica ou sequência: é só perguntar no grupo.</div>
+        </li>
+        <li class="faq-item">
+          <button class="faq-q">
+            <span class="faq-q-left"><span class="faq-num">07 |</span><span class="faq-q-text">Em quanto tempo vejo resultado?</span></span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">A maioria das alunas percebe diferença na primeira aplicação depois de assistir ao módulo de maquiagem pele. O resultado completo, com a rotina instalada, aparece nas primeiras duas semanas.</div>
+        </li>
+        <li class="faq-item">
+          <button class="faq-q">
+            <span class="faq-q-left"><span class="faq-num">08 |</span><span class="faq-q-text">E se eu não gostar?</span></span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Você tem 7 dias de garantia. Se por qualquer motivo não estiver satisfeita, basta pedir o reembolso e devolvemos 100% do valor. Sem perguntas.</div>
+        </li>
+      </ul>
+      <!-- Card de suporte -->
+      <div class="faq-card">
+        <div class="faq-card-header">
+          <div class="faq-card-avatar">
+            <img src="fotos%20marcela/FOTO%20MARCELA%20AUTORIDADE.JPG" alt="Marcela Dezan" />
+          </div>
+          <div>
+            <div class="faq-card-name">Marcela Dezan</div>
+            <div class="faq-card-sub">Maquiagem Express</div>
+          </div>
+        </div>
+        <p class="faq-card-body">Se ainda estiver com alguma dúvida, fale comigo pelo WhatsApp. Estou pronta para ajudar você.</p>
+        <a href="https://wa.me/5511924692063" class="faq-card-cta">Falar no WhatsApp →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+<script>
+    const rows = document.querySelectorAll('.depo-row');
+    const scrollAmt = 340;
+    document.getElementById('depo-prev').addEventListener('click', () => {
+      rows.forEach(r => r.scrollBy({ left: -scrollAmt, behavior: 'smooth' }));
+    });
+    document.getElementById('depo-next').addEventListener('click', () => {
+      rows.forEach(r => r.scrollBy({ left: scrollAmt, behavior: 'smooth' }));
+    });
+  </script>
+<script>
+    (function () {
+      const scroll = document.getElementById('ent-scroll');
+      const orig   = Array.from(scroll.querySelectorAll('.ent-card'));
+      const TOTAL  = orig.length;
+      const N      = 3; /* clones por lado */
+
+      /* Clona os últimos N ao início e os primeiros N ao final */
+      for (let i = TOTAL - N; i < TOTAL; i++) {
+        const c = orig[i].cloneNode(true);
+        c.setAttribute('aria-hidden', 'true');
+        scroll.insertBefore(c, orig[0]);
+      }
+      for (let i = 0; i < N; i++) {
+        const c = orig[i].cloneNode(true);
+        c.setAttribute('aria-hidden', 'true');
+        scroll.appendChild(c);
+      }
+
+      const all    = Array.from(scroll.querySelectorAll('.ent-card'));
+      let pos      = N; /* começa no módulo 1 */
+      let paused   = false;
+      let moving   = false;
+
+      function updateActive() {
+        const cur = (((pos - N) % TOTAL) + TOTAL) % TOTAL;
+        all.forEach((c, i) => {
+          const loop = (((i - N) % TOTAL) + TOTAL) % TOTAL;
+          c.classList.toggle('ativo', loop === cur);
+        });
+      }
+
+      function targetLeft(idx) {
+        const card = all[idx];
+        return card.offsetLeft - (scroll.clientWidth - card.offsetWidth) / 2;
+      }
+
+      function jumpTo(idx, smooth) {
+        pos = idx;
+        scroll.scrollTo({ left: Math.max(0, targetLeft(idx)), behavior: smooth ? 'smooth' : 'instant' });
+        updateActive();
+      }
+
+      function step() {
+        return all[1].offsetLeft - all[0].offsetLeft;
+      }
+
+      function teleport() {
+        if (pos < N) {
+          pos += TOTAL;
+          scroll.scrollLeft += TOTAL * step();
+        } else if (pos >= N + TOTAL) {
+          pos -= TOTAL;
+          scroll.scrollLeft -= TOTAL * step();
+        }
+      }
+
+      /* Inicia com módulo 1 centralizado após layout */
+      requestAnimationFrame(() => requestAnimationFrame(() => jumpTo(N, false)));
+
+      function advance() {
+        if (paused || moving) return;
+        moving = true;
+        teleport();
+        jumpTo(pos + 1, true);
+        setTimeout(() => { teleport(); moving = false; }, 500);
+      }
+
+      let timer = null;
+
+      function startTimer() {
+        if (!timer) timer = setInterval(advance, 2800);
+      }
+
+      function resetTimer() { clearInterval(timer); timer = setInterval(advance, 2800); }
+
+      /* Auto-avanço começa só quando a seção entra na tela */
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) { startTimer(); observer.disconnect(); }
+      }, { threshold: 0.3 });
+      observer.observe(scroll.closest('section') || scroll);
+
+      document.getElementById('ent-prev').addEventListener('click', () => {
+        teleport(); jumpTo(pos - 1, true); setTimeout(teleport, 500); resetTimer();
+      });
+      document.getElementById('ent-next').addEventListener('click', () => {
+        teleport(); jumpTo(pos + 1, true); setTimeout(teleport, 500); resetTimer();
+      });
+
+      scroll.addEventListener('mouseenter', () => { paused = true; });
+      scroll.addEventListener('mouseleave', () => { paused = false; });
+    })();
+  </script>
+
+</body>
+</html>
